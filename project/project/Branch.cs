@@ -9,5 +9,6 @@ namespace project
     abstract class Branch
     {
         public int MyProperty { get; set; }
+
     }
 }

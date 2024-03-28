@@ -8,7 +8,11 @@ namespace project
 {
     abstract class Branch
     {
-        public int MyProperty { get; set; }
+        //List<BranchItemsContext> branchItems;
+        public string Name { get; set; }
+        public Branch Parent { get; set; }
 
+        //List<UserAccess> userAccesses;
+        
     }
 }

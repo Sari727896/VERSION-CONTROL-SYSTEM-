@@ -1,4 +1,5 @@
-﻿using System;
+﻿using project.Composite;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace project
 {
     abstract class Branch
     {
-        //List<BranchItemsContext> branchItems;
+        List<BranchItems> branchItems;
         public string Name { get; set; }
         public Branch Parent { get; set; }
 

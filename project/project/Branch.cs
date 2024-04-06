@@ -13,6 +13,7 @@ namespace project
         public Branch Parent { get; set; }
 
         //List<UserAccess> userAccesses;
+        public 
         
     }
 }

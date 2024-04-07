@@ -32,5 +32,9 @@ namespace project
             else
                 Console.WriteLine("You do not have permission to change the password");
         }
+        public int GetId
+        {
+            get { return id; }
+        }
     }
 }

@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace project.Composite
 {
-    internal class File
+    public class File : BranchItems
     {
+        public File(string Name, double Size) : base(Name, Size)
+        {
+        }
+
+        public string Content { get; set; }
     }
 }

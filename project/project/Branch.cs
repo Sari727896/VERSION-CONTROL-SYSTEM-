@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace project
 {
-    abstract class Branch
+    public class Branch
     {
         List<BranchItems> branchItems;
         public string Name { get; set; }
         public Branch Parent { get; set; }
 
         //List<UserAccess> userAccesses;
-        public 
+        //public 
         
     }
 }

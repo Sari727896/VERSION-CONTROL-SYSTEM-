@@ -55,18 +55,17 @@ namespace project.Composite
         {
 
         }
-        public void RemoveReviewer(User user)
+        public string RemoveReviewer(User user)
         {
             bool removedSuccessfully = this.Reviewers.Remove(user);
 
             if (removedSuccessfully)
             {
-                Console.WriteLine("Reviewer removed successfully.");
+                return "Reviewer removed successfully.\n";
             }
-            else
-            {
-                Console.WriteLine("Reviewer not found in the list.");
-            }
+            
+               return "Reviewer not found in the list.\n";
+            
         }
         public void Notify()
         {

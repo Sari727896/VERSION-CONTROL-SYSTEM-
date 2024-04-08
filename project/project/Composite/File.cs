@@ -12,6 +12,6 @@ namespace project.Composite
         {
         }
 
-        public string Content { get; set; }
+        
     }
 }

@@ -74,6 +74,11 @@ namespace project.Singelton
         }
         public void ChangeCurrentUser(User user)
         {
+            var userToChange = Users.Find(u => u.GetId == user.GetId);
+            if (userToChange == null)
+            {
+                Users.Add(userToChange);
+            }
             this.CurrentUser = user;
         }
     }

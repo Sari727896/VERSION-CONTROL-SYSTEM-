@@ -19,6 +19,12 @@ namespace project.Singelton
             Branches=new List<Branch>();
             Users=new List<User>();
             var user=Users.Find(u=>u.GetId==CurrentUser.GetId);
+            if (user == null)
+            {
+                Users.Add(CurrentUser);
+            }
+            this.CurrentUser = CurrentUser;
+            MainBranch = new Branch();
         }
         public static object locker;
         static GitApp()
@@ -28,17 +34,47 @@ namespace project.Singelton
 
         public static GitApp GetInstance()
         {
+            User currentUser = new("Sari727896", "Sa326", "sari727896@gmail.com");
             if (gitApp == null)
             {
                 lock (locker)
                 {
                     if (gitApp == null)
                     {
-                        //gitApp = new GitApp();
+                        gitApp = new GitApp(currentUser);
                     }
                 }
             }
             return gitApp;
+        }
+        public void AddBranch(Branch branch)
+        {
+            Branches.Add(branch);          
+        }
+        public void DeleteBranch(Branch branch)
+        {
+            var branchToRemoove = Branches.Find(B => B.Name == branch.Name);
+            Branches.Remove(branchToRemoove);
+        }
+        public void AddUser(User user)
+        {
+            var userToAdd=Users.Find(u=>u.GetId==user.GetId);
+            if(userToAdd == null)
+            {
+                Users.Add(user);
+            }
+        }
+        public void DeleteUser(User user)
+        {
+            var userToAdd = Users.Find(u => u.GetId == user.GetId);
+            if (userToAdd == null)
+            {
+                Users.Remove(user);
+            }
+        }
+        public void ChangeCurrentUser(User user)
+        {
+            this.CurrentUser = user;
         }
     }
 }

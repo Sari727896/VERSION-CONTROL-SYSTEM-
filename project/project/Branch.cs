@@ -13,8 +13,8 @@ namespace project
         public string Name { get; set; }
         public Branch Parent { get; set; }
 
-        //List<UserAccess> userAccesses;
+        List<UserAccess> userAccesses;
         //public 
-        
+
     }
 }

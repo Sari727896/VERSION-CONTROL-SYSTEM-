@@ -1,4 +1,6 @@
-﻿using System;
+﻿using project.State.BranchState;
+using project.States.BranchItemsStates;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,14 +12,18 @@ namespace project.Composite
     {
         public string Name { get; set; }
         public double Size { get; set; }
-        //public BrnachItemsState State { get; set; }
+        public BranchItemsState State { private get; set; }
         public List<User> Reviewers { get; set; }
-        public BranchItems(string Name, double Size/*, BrnachItemsState State*/)
+        public BranchItems(string Name, double Size)
         {
             this.Name = Name;
             this.Size = Size;
-            //this.State=State
+            State = new Draft(this);
             this.Reviewers = new List<User>();
+        }
+        public void ChangeItemState(BranchItemsState newState)
+        {
+            State = newState;
         }
         public void AddReviewer(User user)
         {
@@ -63,9 +69,9 @@ namespace project.Composite
             {
                 return "Reviewer removed successfully.\n";
             }
-            
-               return "Reviewer not found in the list.\n";
-            
+
+            return "Reviewer not found in the list.\n";
+
         }
         public void Notify()
         {

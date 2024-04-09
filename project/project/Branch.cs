@@ -1,4 +1,5 @@
 ﻿using project.Composite;
+using project.Flyweight;
 using project.State.BranchState;
 using project.States.BranchStates;
 using System;
@@ -63,6 +64,10 @@ namespace project
         public void GrantAccess()
         {
 
+        }
+        public void ChangeFile(string name, string content)
+        {
+            
         }
         public object Clone()
         {

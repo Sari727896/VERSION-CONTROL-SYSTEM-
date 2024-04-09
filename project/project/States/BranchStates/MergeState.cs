@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace project.States.BranchStates
 {
-    internal class MergeState
+    public class MergeState:
     {
     }
 }

@@ -81,5 +81,13 @@ namespace project.Singelton
             }
             this.CurrentUser = user;
         }
+        public void AddUserIfNotExists(User user)
+        {
+            var userToAdd = Users.Find(u => u.GetId == user.GetId);
+            if (userToAdd == null)
+            {
+                Users.Add(userToAdd);
+            }
+        }
     }
 }

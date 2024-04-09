@@ -13,10 +13,10 @@ namespace project.State.BranchState
         {
             this.branch=branch;
         }
-        public abstract void HandleBranch();
-        public abstract void UnlockBranch();
-        public abstract void LockBranch();
-        public abstract void Merge();
+        public abstract string HandleBranch();
+        public abstract string UnlockBranch();
+        public abstract string LockBranch();
+        public abstract string Merge();
         
     }
 }

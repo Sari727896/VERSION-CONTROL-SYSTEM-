@@ -13,24 +13,25 @@ namespace project.States.BranchStates
         {
         }
 
-        public override void HandleBranch()
+        public override string HandleBranch()
         {
-            throw new NotImplementedException();
+            return "Handling branch...";
         }
 
-        public override void LockBranch()
+        public override string LockBranch()
         {
-            throw new NotImplementedException();
+            return "Cannot lock branch, it is being handled.";
         }
 
-        public override void Merge()
+        public override string Merge()
         {
-            throw new NotImplementedException();
+            branch.ChangeState(new MergeState(branch));
+            return "Branch is now in merge state.";
         }
 
-        public override void UnlockBranch()
+        public override string UnlockBranch()
         {
-            throw new NotImplementedException();
+            return "Cannot unlock branch, it is being handled.";
         }
     }
 }

@@ -24,7 +24,7 @@ namespace project.Singelton
                 Users.Add(CurrentUser);
             }
             this.CurrentUser = CurrentUser;
-            MainBranch = new Branch();
+            MainBranch = new Branch("Main");
         }
         public static object locker;
         static GitApp()

@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace project
 {
     public class Branch:ICloneable
-    {
+    {//to do id
         List<BranchItems> branchItems;
         public string Name { get; set; }
         public Branch Parent { get; set; }

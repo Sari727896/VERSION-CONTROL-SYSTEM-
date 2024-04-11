@@ -12,25 +12,32 @@ namespace project.States.BranchItemsStates
         public Staged(BranchItems branchItem) : base(branchItem)
         {
         }
-
-        public override string commit()
+        
+        public override string Commit()
         {
-            throw new NotImplementedException();
+            branchItem.ChangeItemState(new Commited(branchItem));
+            return "Committing changes to staged state.\n";
         }
 
-        public override string merge()
+        public override string Merge()
         {
-            throw new NotImplementedException();
+            return "Cannot merge in Staged state.\n";
         }
 
-        public override string requestAReview()
+        public override string RequestAReview()
         {
-            throw new NotImplementedException();
+            branchItem.ChangeItemState(new UnderReview(branchItem));
+            return "Requesting review for changes.\n";
         }
 
-        public override string undoTheCommit()
+        public override string UndoTheCommit()
         {
-            throw new NotImplementedException();
+            return "Cannot undo The Commit in Staged state.\n";
         }
     }
+
+
+
+
+
 }

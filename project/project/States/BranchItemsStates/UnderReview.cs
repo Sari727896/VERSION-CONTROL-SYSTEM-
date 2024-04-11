@@ -9,28 +9,29 @@ namespace project.States.BranchItemsStates
 {
     public class UnderReview : BranchItemsState
     {
+        //to do after observer state
         public UnderReview(BranchItems branchItem) : base(branchItem)
         {
         }
 
-        public override string commit()
+        public override string Commit()
         {
             throw new NotImplementedException();
         }
 
-        public override string merge()
+        public override string Merge()
         {
             throw new NotImplementedException();
         }
 
-        public override string requestAReview()
+        public override string RequestAReview()
         {
-            throw new NotImplementedException();
+            return "File is already under review.\n"
         }
 
-        public override string undoTheCommit()
-        {
-            throw new NotImplementedException();
+        public override string UndoTheCommit()
+        {//to implemnt with momento design patern
+            return "Undoing the commit and reverting to the previous state.\n";
         }
     }
 }

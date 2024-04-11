@@ -13,24 +13,27 @@ namespace project.States.BranchItemsStates
         {
         }
 
-        public override string commit()
+        public override string Commit()
         {
-            throw new NotImplementedException();
+            return "Cannot commit in Merged state.\n";
+
         }
 
-        public override string merge()
+        public override string Merge()
         {
-            throw new NotImplementedException();
+            return "Cannot merge in merged state.\n";
         }
 
-        public override string requestAReview()
+        public override string RequestAReview()
         {
-            throw new NotImplementedException();
+            branchItem.ChangeItemState(new UnderReview(branchItem));
+            return "Request a review changes in merged state";
         }
 
-        public override string undoTheCommit()
+        public override string UndoTheCommit()
         {
-            throw new NotImplementedException();
+            //To do
+            return "Undoing the commit and reverting to the previous state.\n";
         }
     }
 }

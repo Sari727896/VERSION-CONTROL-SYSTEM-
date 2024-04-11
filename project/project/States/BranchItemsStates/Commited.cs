@@ -18,10 +18,10 @@ namespace project.States.BranchItemsStates
             return "Nothing to commit.\n";
         }
 
-        public override string Merge()
+        public override void Merge()
         {
             branchItem.ChangeItemState(new Merged(branchItem));
-            return "Merge successful! Your changes have been integrated into the main branch. Great teamwork!\n";
+            //return "Merge successful! Your changes have been integrated into the main branch. Great teamwork!\n";
         }
 
         public override string RequestAReview()
@@ -32,7 +32,7 @@ namespace project.States.BranchItemsStates
 
         public override string UndoTheCommit()
         {
-            return "Cannot undo commit in commited state.\n"
+            return "Cannot undo commit in commited state.\n";
         }
     }
 }

@@ -12,7 +12,7 @@ namespace project.Composite
     {
         public string Name { get; set; }
         public double Size { get; set; }
-        public BranchItemsState State { private get; set; }
+        public BranchItemsState State { protected get; set; }
         public List<User> Reviewers { get; set; }
         public BranchItems(string Name, double Size)
         {
@@ -29,25 +29,28 @@ namespace project.Composite
         {
             this.Reviewers.Add(user);
         }
-        public void UndoTheCommit()
+        public string UndoTheCommit()
         {
-
+            //to do with memnto
+            State.UndoTheCommit();
+            return "to do with memnto";
         }
-        public void RequestAReview()
+        public string RequestAReview()
         {
-
+            //to do with observer
+            State.RequestAReview();
+            return "to do with observer";
         }
         public void ChangeContent(string textToChange)
         {
 
         }
-        public void Merge()
+        public abstract string Merge(BranchItems item);
+        public string Commit()
         {
-
-        }
-        public void Commit()
-        {
-
+            //to do with memnto
+            State.Commit();
+            return"we need to implement the function"
         }
         public void CreateState()/*: BranchItemsMemento*/
         {

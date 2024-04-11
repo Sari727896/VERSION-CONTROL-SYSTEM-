@@ -22,10 +22,10 @@ namespace project.States.BranchItemsStates
 
 
 
-        public override string Merge()
+        public override void Merge()
         {
             branchItem.ChangeItemState(new Merged(branchItem));
-            return "Merge changes to merged state";
+            ////return "Merge changes to merged state";
         }
 
 

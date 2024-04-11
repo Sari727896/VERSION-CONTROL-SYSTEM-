@@ -19,14 +19,14 @@ namespace project.States.BranchItemsStates
             throw new NotImplementedException();
         }
 
-        public override string Merge()
+        public override void Merge()
         {
             throw new NotImplementedException();
         }
 
         public override string RequestAReview()
         {
-            return "File is already under review.\n"
+            return "File is already under review.\n";
         }
 
         public override string UndoTheCommit()

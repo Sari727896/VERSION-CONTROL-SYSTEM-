@@ -19,9 +19,10 @@ namespace project.States.BranchItemsStates
             return "Committing changes to draft state.\n";
         }
 
-        public override string Merge()
+        public override void Merge()
         {
-            return "Cannot merge in Draft state.\n";
+            //return "Cannot merge in Draft state.\n";
+            throw new Exception("Cannot merge in Draft state.\n");
         }
 
         public override string RequestAReview()
@@ -32,7 +33,7 @@ namespace project.States.BranchItemsStates
 
         public override string UndoTheCommit()
         {
-           return "Cannot undo commit in Draft state.\n"
+            return "Cannot undo commit in Draft state.\n";
         }
     }
 }

@@ -14,7 +14,7 @@ namespace project.States.BranchItemsStates
         {
             this.branchItem=branchItem;
         }
-        public abstract string Merge();
+        public abstract void Merge();
         public abstract string Commit();
         public abstract string UndoTheCommit();
         public abstract string RequestAReview();

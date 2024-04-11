@@ -22,5 +22,22 @@ namespace project.Composite
             var itemToRemove=Items.Find(i=>i.Name==item.Name);
             Items.Remove(itemToRemove);
         }
+
+        //public override string MergeFile(File file)
+        //{
+        //    return "Can not merge file with folder";
+        //}
+
+        public override string Merge(BranchItems item)
+        {
+            if(item is File)
+                return "Can not merge file with folder";
+            Folder folder = item as Folder;
+            if (folder == null)
+                return "Conversion to Folder type failed \n";
+            State.Merge();
+            this.Items.AddRange(folder.Items);
+            return $"the files {this.Name} and {folder.Name} had merged. ";
+        }
     }
 }

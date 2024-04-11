@@ -19,9 +19,10 @@ namespace project.States.BranchItemsStates
             return "Committing changes to staged state.\n";
         }
 
-        public override string Merge()
+        public override void Merge()
         {
-            return "Cannot merge in Staged state.\n";
+            //return "Cannot merge in Staged state.\n";
+            throw new Exception("Cannot merge in Staged state.\n");
         }
 
         public override string RequestAReview()

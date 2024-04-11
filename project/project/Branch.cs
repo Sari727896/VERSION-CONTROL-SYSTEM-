@@ -39,7 +39,7 @@ namespace project
         {
             var itemToRemove= branchItems.Find(i=>i.Name==item.Name);
             branchItems.Remove(itemToRemove);
-            return $"The file {item.Name}  has been removed successfully"
+            return $"The file {item.Name}  has been removed successfully";
         }
         public void CreateBranch(string branchName)
         {

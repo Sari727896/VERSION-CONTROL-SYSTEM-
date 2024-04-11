@@ -1,4 +1,5 @@
-﻿using project.Singelton;
+﻿using project.Composite;
+using project.Singelton;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,13 +10,13 @@ namespace project.Command
 {
     public class RequestAReviewCommand : GitActionsCommand
     {
-        public RequestAReviewCommand(GitApp GitApp) : base(GitApp)
+        public RequestAReviewCommand(BranchItems BranchItem) : base(BranchItem)
         {
         }
 
         public override string Execute()
         {
-            throw new NotImplementedException();
+            return BranchItem.RequestAReview();
         }
     }
 }

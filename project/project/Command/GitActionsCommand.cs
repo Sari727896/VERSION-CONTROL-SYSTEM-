@@ -1,4 +1,5 @@
-﻿using project.Singelton;
+﻿using project.Composite;
+using project.Singelton;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,10 @@ namespace project.Command
 {
     public abstract class GitActionsCommand
     {
-        protected GitApp GitApp { get; set; }
-        public GitActionsCommand(GitApp GitApp)
+        protected BranchItems BranchItem { get; set; }
+        public GitActionsCommand(BranchItems BranchItem)
         {
-            this.GitApp=GitApp;
+            this.BranchItem=BranchItem;
         }
         public abstract string Execute();
     }

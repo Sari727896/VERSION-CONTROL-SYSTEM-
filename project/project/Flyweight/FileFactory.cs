@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,19 +11,37 @@ namespace project.Flyweight
     public class FileFactory
     {
         static Dictionary<string, FileContent> existingContent;
+        static FileFactory fileFactory;
+        public static object locker;
+
         static FileFactory()
         {
             existingContent= new Dictionary<string, FileContent>();
+            locker= new object();
         }
-        public static FileContent GetContent(string content)
+        public static FileFactory GetInstance()
         {
-            
-            if(existingContent.ContainsKey(content))
+            if (fileFactory == null)
             {
-                return existingContent[content];
+                lock (locker)
+                {
+                    if (fileFactory == null)
+                    {
+                        fileFactory = new FileFactory();
+                    }
+                }
+            }
+            return fileFactory;
+        }
+        public static FileContent GetContent(int brnachId,string fileName,string content)
+        {
+            string contentKey = $"{brnachId.ToString()}_{fileName}";
+            if (existingContent.ContainsKey(contentKey))
+            {
+                return existingContent[contentKey];
             }
             FileContent content1 = new(content);
-            existingContent.Add(content, content1);
+            existingContent.Add(contentKey,content1);
             return content1;
         }
     }

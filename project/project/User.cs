@@ -14,7 +14,7 @@ namespace project
         private static int nextId = 1;
 
         private int id;
-        private string Password { get; set; }
+        public string Password { get;private set; }
         public string Email { get; private set; }
 
         Queue<GitActionsCommand> actionsCommand;
@@ -26,6 +26,10 @@ namespace project
             this.Password = password;
             this.Email = Email;
             actionsCommand= new Queue<GitActionsCommand>();
+        }
+        public Queue<GitActionsCommand> GetActionsCommand()
+        {
+            return actionsCommand;
         }
         public void PlacesystemItemRequest(GitActionsCommand command)
         {
@@ -52,9 +56,10 @@ namespace project
             else
                 Console.WriteLine("You do not have permission to change the password");
         }
-        public int GetId
+        public  int GetId
         {
             get { return id; }
         }
+        
     }
 }

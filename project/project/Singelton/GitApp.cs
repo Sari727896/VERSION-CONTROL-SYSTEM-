@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace project.Singelton
-{
+{//לשנות לממש אם קיים userלפי הפונקציה שיצרנו שבודקת
     public class GitApp
     {
         public List<Branch> Branches { get; set; }
         public User CurrentUser { get; set; }
-        public List<User> Users { get; set; }
+        public static List<User> Users { get; set; }//האם נכון לעשות את זה static
         public Branch MainBranch { get; set; }
 
         static GitApp gitApp;
@@ -18,11 +18,7 @@ namespace project.Singelton
         {
             Branches=new List<Branch>();
             Users=new List<User>();
-            var user=Users.Find(u=>u.GetId==CurrentUser.GetId);
-            if (user == null)
-            {
-                Users.Add(CurrentUser);
-            }
+            AddUserIfNotExists(CurrentUser);
             this.CurrentUser = CurrentUser;
             MainBranch = new Branch("Main");
         }
@@ -58,11 +54,7 @@ namespace project.Singelton
         }
         public void AddUser(User user)
         {
-            var userToAdd=Users.Find(u=>u.GetId==user.GetId);
-            if(userToAdd == null)
-            {
-                Users.Add(user);
-            }
+            AddUserIfNotExists(user);
         }
         public void DeleteUser(User user)
         {
@@ -74,11 +66,7 @@ namespace project.Singelton
         }
         public void ChangeCurrentUser(User user)
         {
-            var userToChange = Users.Find(u => u.GetId == user.GetId);
-            if (userToChange == null)
-            {
-                Users.Add(userToChange);
-            }
+            AddUserIfNotExists(user);
             this.CurrentUser = user;
         }
         public void AddUserIfNotExists(User user)
@@ -88,6 +76,11 @@ namespace project.Singelton
             {
                 Users.Add(userToAdd);
             }
+        }
+        public static User GetUserById(int  id)
+        {
+            var user= Users.Find(u => u.GetId ==id);
+            return user;
         }
     }
 }

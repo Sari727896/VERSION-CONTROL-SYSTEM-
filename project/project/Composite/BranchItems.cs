@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace project.Composite
 {
-    public abstract class BranchItems
+    public abstract class BranchItems:ICloneable
     {
         public string Name { get; set; }
         public double Size { get; set; }
@@ -50,7 +50,7 @@ namespace project.Composite
         {
             //to do with memnto
             State.Commit();
-            return"we need to implement the function"
+            return "we need to implement the function";
         }
         public void CreateState()/*: BranchItemsMemento*/
         {
@@ -80,5 +80,8 @@ namespace project.Composite
         {
 
         }
+
+        public abstract object Clone();
+       
     }
 }

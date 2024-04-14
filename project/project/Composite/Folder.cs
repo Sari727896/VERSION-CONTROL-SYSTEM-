@@ -1,4 +1,5 @@
-﻿using System;
+﻿using project.Command;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -38,6 +39,31 @@ namespace project.Composite
             State.Merge();
             this.Items.AddRange(folder.Items);
             return $"the files {this.Name} and {folder.Name} had merged. ";
+        }
+
+        public override object Clone()
+        {
+            Folder clonedFolder = new Folder(this.Name, this.Size);
+            clonedFolder.State = this.State; // העתקה עמוקה של State
+
+            // העתקה עמוקה של Reviewers
+            clonedFolder.Reviewers = new List<User>();
+            foreach (User reviewer in this.Reviewers)
+            {
+                User clonedReviewer = new User(reviewer.UserName, reviewer.Password, reviewer.Email);
+                clonedFolder.Reviewers.Add(clonedReviewer);
+            }
+
+            // העתקה עמוקה של actionsCommand
+            //clonedFolder.actionsCommand = new Queue<GitActionsCommand>(this.actionsCommand);
+
+            // העתקה עמוקה של רשימת הפריטים בתוך התיקייה
+            foreach (BranchItems item in this.Items)
+            {
+                clonedFolder.Items.Add(item.Clone());
+            }
+
+            return clonedFolder;
         }
     }
 }

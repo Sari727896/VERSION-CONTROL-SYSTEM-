@@ -28,9 +28,17 @@ namespace project.Composite
             return $"the files {this.Name} and {file.Name} had merged. ";
         }
 
-        public override string MergeFolder(Folder folder)
+        public override object Clone()
         {
-            return "Can not merge file with folder";
+            File clonedItem = new File(this.Name, this.Size,this.Content);
+            clonedItem.State = this.State;
+            clonedItem.Reviewers = new List<User>(this.Reviewers);
+            return clonedItem;
         }
+
+        //public override string MergeFolder(Folder folder)
+        //{
+        //    return "Can not merge file with folder";
+        //}
     }
 }

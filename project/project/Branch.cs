@@ -20,7 +20,7 @@ namespace project
         private static int nextId = 1;
         public int Id { get;  }
         public BranchState State {private get; set; }
-        public FileFactory FileFactory { get; set; }
+        public ContentFactory FileFactory { get; set; }
         public Branch(string Name,Branch Parent=null)
         {
             branchItems=new List<BranchItems>();
@@ -29,7 +29,7 @@ namespace project
             userAccesses=new List<UserAccess>();
             State=new LockBranchState(this);
             Id=nextId++;
-            FileFactory = FileFactory.GetInstance();
+            FileFactory = ContentFactory.GetInstance();
         }
         public void ChangeState(BranchState newState)
         {
@@ -71,8 +71,10 @@ namespace project
             //userAccesses.computeIfAbsent(branchName, k-> new HashSet<>()).add(user);
         }
         public void ChangeFile(string name, string content)
-        {//לשאול
-            FileContent content1=FileFactory.GetContent(Id, name,content);
+        {
+            var file= branchItems.Find(f=>f.Name==name);
+            
+            FileContent content1=ContentFactory.GetContent(Id, name,content);
         }
         public object Clone()
         {
@@ -87,8 +89,6 @@ namespace project
             {
                 clonedBranch.branchItems.Add((BranchItems)item.Clone());
             }
-            clonedBranch.State = this.State;
-            clonedBranch.FileFactory = this.FileFactory;
             return clonedBranch;
         }
     }

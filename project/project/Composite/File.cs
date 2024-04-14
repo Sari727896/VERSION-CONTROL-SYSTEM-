@@ -1,4 +1,5 @@
-﻿using System;
+﻿using project.Flyweight;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace project.Composite
 {
     public class File : BranchItems
     {
-        public string Content { get; set; }
+        public FileContent Content { get; set; }
         public File(string Name, double Size,string Content) : base(Name, Size)
         {
             this.Content = Content;
@@ -32,7 +33,7 @@ namespace project.Composite
         {
             File clonedItem = new File(this.Name, this.Size,this.Content);
             clonedItem.State = this.State;
-            clonedItem.Reviewers = new List<User>(this.Reviewers);
+            //clonedItem.Reviewers = new List<User>(this.Reviewers);
             return clonedItem;
         }
 

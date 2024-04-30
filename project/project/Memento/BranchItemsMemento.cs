@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace project.Memento
 {
-    internal class BranchItemsMemento
+    public abstract class BranchItemsMemento
     {
+        public readonly DateTime TimeStamp;
+        public BranchItemsMemento(DateTime timeStamp)
+        {
+            TimeStamp = timeStamp;
+        }
     }
 }

@@ -8,12 +8,13 @@ using System.Threading.Tasks;
 
 namespace project.Memento
 {
-    public class BranchItemsMemento
+    public class FileMemento : BranchItemsMemento
     {
-       public readonly BranchItemsState Content;
-        public BranchItemsMemento(BranchItemsState Content)
+       public readonly string Content;
+
+        public FileMemento(DateTime timeStamp,string Content) : base(timeStamp)
         {
-            this.Content=Content;
+            this.Content = Content;
         }
     }
 }

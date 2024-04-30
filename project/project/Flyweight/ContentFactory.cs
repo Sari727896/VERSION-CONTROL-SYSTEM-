@@ -8,18 +8,18 @@ using System.Threading.Tasks;
 
 namespace project.Flyweight
 {
-    public class FileFactory
+    public class ContentFactory
     {
         static Dictionary<string, FileContent> existingContent;
-        static FileFactory fileFactory;
+        static ContentFactory fileFactory;
         public static object locker;
 
-        static FileFactory()
+        static ContentFactory()
         {
             existingContent= new Dictionary<string, FileContent>();
             locker= new object();
         }
-        public static FileFactory GetInstance()
+        public static ContentFactory GetInstance()
         {
             if (fileFactory == null)
             {
@@ -27,7 +27,7 @@ namespace project.Flyweight
                 {
                     if (fileFactory == null)
                     {
-                        fileFactory = new FileFactory();
+                        fileFactory = new ContentFactory();
                     }
                 }
             }

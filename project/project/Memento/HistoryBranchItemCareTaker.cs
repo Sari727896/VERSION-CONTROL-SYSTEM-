@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace project.Memento
 {
-    internal class HistoryBranchItemCareTaker
+    public class HistoryBranchItemCareTaker
     {
+        private List<BranchItemsMemento> mementoes = new List<BranchItemsMemento>();
+        public void Push(BranchItemsMemento state)
+        {
+            mementoes.Add(state);
+        }
+        public BranchItemsMemento Pop()
+        {
+            var lastIndex = mementoes.Count - 1;
+            var lastState = mementoes[lastIndex];
+            mementoes.Remove(lastState);
+            return lastState;
+        }
     }
 }

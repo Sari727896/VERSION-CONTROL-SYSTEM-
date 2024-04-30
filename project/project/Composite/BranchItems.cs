@@ -1,4 +1,5 @@
-﻿using project.State.BranchState;
+﻿using project.Flyweight;
+using project.State.BranchState;
 using project.States.BranchItemsStates;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace project.Composite
 {
-    public abstract class BranchItems:ICloneable
+    public abstract class BranchItems : ICloneable
     {
         public string Name { get; set; }
         public double Size { get; set; }
@@ -41,10 +42,7 @@ namespace project.Composite
             State.RequestAReview();
             return "to do with observer";
         }
-        public void ChangeContent(string textToChange)
-        {
-
-        }
+        public abstract void ChangeContent(FileContent content);
         public abstract string Merge(BranchItems item);
         public string Commit()
         {
@@ -82,6 +80,6 @@ namespace project.Composite
         }
 
         public abstract object Clone();
-       
+
     }
 }

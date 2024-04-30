@@ -10,7 +10,7 @@ namespace project.Composite
     public class File : BranchItems
     {
         public FileContent Content { get; set; }
-        public File(string Name, double Size,string Content) : base(Name, Size)
+        public File(string Name, double Size, FileContent Content) : base(Name, Size)
         {
             this.Content = Content;
         }
@@ -25,16 +25,21 @@ namespace project.Composite
             if (file == null)
                 return "Conversion to Folder type failed \n";
             State.Merge();
-            this.Content = string.Concat(this.Content, file.Content);
+            this.Content.Content = string.Concat(this.Content, file.Content);
             return $"the files {this.Name} and {file.Name} had merged. ";
         }
 
         public override object Clone()
         {
             File clonedItem = new File(this.Name, this.Size,this.Content);
-            clonedItem.State = this.State;
+            //clonedItem.State = this.State;
             //clonedItem.Reviewers = new List<User>(this.Reviewers);
             return clonedItem;
+        }
+
+        public override void ChangeContent(FileContent content)
+        {
+            this.Content=content;
         }
 
         //public override string MergeFolder(Folder folder)

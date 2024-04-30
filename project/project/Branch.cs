@@ -73,8 +73,10 @@ namespace project
         public void ChangeFile(string name, string content)
         {
             var file= branchItems.Find(f=>f.Name==name);
-            
             FileContent content1=ContentFactory.GetContent(Id, name,content);
+            content1.Content = content;
+            file.ChangeContent(content1);
+            // אם זה תכולה של הבראנצ הנוכחי ואם לא מייצרת חדשאני לא יוצרת אובקיט חדש לתכולה רק מצביע חדש וכשאר רוצים לשנות אני בודקת 
         }
         public object Clone()
         {

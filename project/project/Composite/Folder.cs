@@ -1,4 +1,5 @@
 ﻿using project.Command;
+using project.Flyweight;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -64,6 +65,11 @@ namespace project.Composite
             }
 
             return clonedFolder;
+        }
+
+        public override void ChangeContent(FileContent content)
+        {
+            throw new Exception("you can change only file"); 
         }
     }
 }

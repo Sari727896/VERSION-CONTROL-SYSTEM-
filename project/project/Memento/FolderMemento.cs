@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace project.Memento
 {
-    internal class BranchItemsMemento
+    internal class FolderMemnto
     {
     }
 }

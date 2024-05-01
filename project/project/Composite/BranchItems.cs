@@ -1,9 +1,11 @@
 ﻿using project.Flyweight;
+using project.Memento;
 using project.State.BranchState;
 using project.States.BranchItemsStates;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,12 +17,15 @@ namespace project.Composite
         public double Size { get; set; }
         public BranchItemsState State { protected get; set; }
         public List<User> Reviewers { get; set; }
+        public HistoryBranchItemCareTaker History { get; set; }
+
         public BranchItems(string Name, double Size)
         {
             this.Name = Name;
             this.Size = Size;
             State = new Draft(this);
             this.Reviewers = new List<User>();
+            History = new();
         }
         public void ChangeItemState(BranchItemsState newState)
         {
@@ -34,7 +39,8 @@ namespace project.Composite
         {
             //to do with memnto
             State.UndoTheCommit();
-            return "to do with memnto";
+            this.Restore(History.Pop());
+            return $"the file {this.Name} returned to its previous state.";
         }
         public string RequestAReview()
         {
@@ -48,16 +54,13 @@ namespace project.Composite
         {
             //to do with memnto
             State.Commit();
-            return "we need to implement the function";
+            History.Push(this.CreateState());
+            return $"the brnachItem {this.Name} had commited successfuly ";
         }
-        public void CreateState()/*: BranchItemsMemento*/
-        {
+        public abstract BranchItemsMemento CreateState();
 
-        }
-        public void Restore()
-        {
+        public abstract void Restore(BranchItemsMemento memento);
 
-        }
         public void ShowHistory()
         {
 

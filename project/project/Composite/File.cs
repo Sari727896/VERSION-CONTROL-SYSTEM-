@@ -1,4 +1,5 @@
 ﻿using project.Flyweight;
+using project.Memento;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,6 +41,24 @@ namespace project.Composite
         public override void ChangeContent(FileContent content)
         {
             this.Content=content;
+        }
+
+        public override BranchItemsMemento CreateState()
+        {
+            return new FileMemento(DateTime.Now,Content.Content);
+        }
+
+        public override void Restore(BranchItemsMemento state)
+        {
+            if(state is FileMemento)
+            {
+                var fileMementoState = state as FileMemento;
+                Content.Content = fileMementoState.Content;
+            }
+            //else
+            //{
+            //    throw new Exception("")
+            //}
         }
 
         //public override string MergeFolder(Folder folder)

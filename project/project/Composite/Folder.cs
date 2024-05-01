@@ -1,8 +1,10 @@
 ﻿using project.Command;
 using project.Flyweight;
+using project.Memento;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -70,6 +72,25 @@ namespace project.Composite
         public override void ChangeContent(FileContent content)
         {
             throw new Exception("you can change only file"); 
+        }
+
+        public override BranchItemsMemento CreateState()
+        {
+            return new FolderMemento(DateTime.Now, Items);
+
+        }
+
+        public override void Restore(BranchItemsMemento state)
+        {
+            if (state is FolderMemento)
+            {
+                var folderMementoState = state as FolderMemento;
+                Items = folderMementoState.Content;
+            }
+            //else
+            //{
+            //    throw new Exception("")
+            //}
         }
     }
 }

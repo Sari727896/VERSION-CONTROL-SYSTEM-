@@ -1,13 +1,20 @@
 ﻿using project.Command;
+using project.Osberver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System;
+
+
+
 
 namespace project
 {//the user is a invoker
-    public class User
+    public class User:IReviewer
     {
         public string UserName { get; private set; }
 
@@ -56,6 +63,35 @@ namespace project
             else
                 Console.WriteLine("You do not have permission to change the password");
         }
+
+        private string fromAddress = "sari727896@gmail.com"; // המייל שלך
+
+        public void Update( string toAddress)
+        {
+            try
+            {
+                string subject = "File Review Notification";
+                string body ="Review you need to check some file";
+
+                SmtpClient smtpClient = new SmtpClient("smtp.example.com")
+                {
+                    Port = 587,
+                    Credentials = new NetworkCredential(fromAddress, Environment.GetEnvironmentVariable("EMAIL_PASSWORD")),
+                    EnableSsl = true,
+                };
+
+                MailMessage mailMessage = new MailMessage(fromAddress, toAddress, subject, body);
+
+                smtpClient.Send(mailMessage);
+
+                Console.WriteLine("Email sent successfully from: " + fromAddress + " to: " + toAddress);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error sending email: " + ex.Message);
+            }
+        }
+
         public  int GetId
         {
             get { return id; }

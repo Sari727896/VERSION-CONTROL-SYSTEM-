@@ -11,4 +11,8 @@
     <None Remove="fxv2wp5t.1m4~" />
   </ItemGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command=" set EMAIL_PASSWORD=Sari326038403" />
+  </Target>
+
 </Project>

@@ -13,3 +13,18 @@ C:\Users\User\Desktop\designPatterns-project\project\project\obj\Debug\net7.0\re
 C:\Users\User\Desktop\designPatterns-project\project\project\obj\Debug\net7.0\project.pdb
 C:\Users\User\Desktop\designPatterns-project\project\project\obj\Debug\net7.0\project.genruntimeconfig.cache
 C:\Users\User\Desktop\designPatterns-project\project\project\obj\Debug\net7.0\ref\project.dll
+C:\Users\USER\Desktop\design pattern final project\designPatterns-project\project\project\bin\Debug\net7.0\project.exe
+C:\Users\USER\Desktop\design pattern final project\designPatterns-project\project\project\bin\Debug\net7.0\project.deps.json
+C:\Users\USER\Desktop\design pattern final project\designPatterns-project\project\project\bin\Debug\net7.0\project.runtimeconfig.json
+C:\Users\USER\Desktop\design pattern final project\designPatterns-project\project\project\bin\Debug\net7.0\project.dll
+C:\Users\USER\Desktop\design pattern final project\designPatterns-project\project\project\bin\Debug\net7.0\project.pdb
+C:\Users\USER\Desktop\design pattern final project\designPatterns-project\project\project\obj\Debug\net7.0\project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\design pattern final project\designPatterns-project\project\project\obj\Debug\net7.0\project.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\design pattern final project\designPatterns-project\project\project\obj\Debug\net7.0\project.AssemblyInfo.cs
+C:\Users\USER\Desktop\design pattern final project\designPatterns-project\project\project\obj\Debug\net7.0\project.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\design pattern final project\designPatterns-project\project\project\obj\Debug\net7.0\project.sourcelink.json
+C:\Users\USER\Desktop\design pattern final project\designPatterns-project\project\project\obj\Debug\net7.0\project.dll
+C:\Users\USER\Desktop\design pattern final project\designPatterns-project\project\project\obj\Debug\net7.0\refint\project.dll
+C:\Users\USER\Desktop\design pattern final project\designPatterns-project\project\project\obj\Debug\net7.0\project.pdb
+C:\Users\USER\Desktop\design pattern final project\designPatterns-project\project\project\obj\Debug\net7.0\project.genruntimeconfig.cache
+C:\Users\USER\Desktop\design pattern final project\designPatterns-project\project\project\obj\Debug\net7.0\ref\project.dll

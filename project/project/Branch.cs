@@ -21,6 +21,8 @@ namespace project
         public int Id { get;  }
         public BranchState State {private get; set; }
         public ContentFactory FileFactory { get; set; }
+        public List<Branch> Branches { get; set; }
+
         public Branch(string Name,Branch Parent=null)
         {
             branchItems=new List<BranchItems>();
@@ -30,6 +32,7 @@ namespace project
             State=new LockBranchState(this);
             Id=nextId++;
             FileFactory = ContentFactory.GetInstance();
+            Branches = new List<Branch>();
         }
         public void ChangeState(BranchState newState)
         {
@@ -46,9 +49,22 @@ namespace project
             branchItems.Remove(itemToRemove);
             return $"The file {item.Name}  has been removed successfully";
         }
-        public void CreateBranch(string branchName)
+        public Branch CreateBranch(string existingBranchName,string newBranchName)
         {
-              
+            Branch existingBranch = Branches.Find(branch => branch.Name == existingBranchName);
+            if (existingBranch != null)
+            {
+                Branch newBranch = (Branch)existingBranch.Clone();
+                newBranch.Name = newBranchName;
+
+                return newBranch;
+            }
+
+            return null;
+        }
+        public void RemoveBranch(Branch branch)
+        {
+            Branches.Remove(branch);
         }
         public string LockBranch()
         {

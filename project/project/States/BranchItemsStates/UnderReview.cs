@@ -16,12 +16,12 @@ namespace project.States.BranchItemsStates
 
         public override string Commit()
         {
-            throw new NotImplementedException();
+            return "is wating to confirm";
         }
 
         public override void Merge()
         {
-            throw new NotImplementedException();
+            throw new Exception("Cannot merge in merged state.\n");
         }
 
         public override string RequestAReview()
@@ -30,7 +30,7 @@ namespace project.States.BranchItemsStates
         }
 
         public override string UndoTheCommit()
-        {//to implemnt with momento design patern
+        {
             return "Undoing the commit and reverting to the previous state.\n";
         }
     }

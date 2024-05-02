@@ -8,4 +8,4 @@ User user = new("123", "456", "789");
 //WriteLine(user.UserName);
 //GitApp gitApp =GitApp.GetInstance();
 //gitApp.ChangeCurrentUser(user);
-user.Update("sari727896@gmail.com");
+//user.Update("sari727896@gmail.com");

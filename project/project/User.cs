@@ -8,9 +8,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System;
-
-
-
+using project.Composite;
 
 namespace project
 {//the user is a invoker
@@ -23,6 +21,7 @@ namespace project
         private int id;
         public string Password { get;private set; }
         public string Email { get; private set; }
+        public BranchItems ItemToCheck { get; set; }
 
         Queue<GitActionsCommand> actionsCommand;
 
@@ -66,8 +65,9 @@ namespace project
 
         private string fromAddress = "sari727896@gmail.com"; // המייל שלך
 
-        public void Update( string toAddress)
+        public void Update( string toAddress,BranchItems item)
         {
+            ItemToCheck = item;
             try
             {
                 string subject = "File Review Notification";
@@ -90,6 +90,11 @@ namespace project
             {
                 Console.WriteLine("Error sending email: " + ex.Message);
             }
+        }
+
+        public void ConfirmRequest()
+        {
+           ItemToCheck.ConfirmCommit();
         }
 
         public  int GetId

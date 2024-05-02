@@ -47,7 +47,7 @@ namespace project.Composite
             //to do with observer
            
             State.RequestAReview();
-            Notify("sari727896@gmail.com");
+            NotifyReviewer("sari727896@gmail.com");
             return "to do with observer";
         }
         public abstract void ChangeContent(FileContent content);
@@ -79,16 +79,19 @@ namespace project.Composite
             return "Reviewer not found in the list.\n";
 
         }
-        public void Notify(string toAddress)
-        {
-           
+        public void NotifyReviewer(string toAddress)
+        { 
             foreach (var observer in Reviewers)
             {
-                observer.Update(toAddress);
+                observer.Update(toAddress,this);
             }
         }
 
         public abstract object Clone();
+        public void ConfirmCommit()
+        {
+            State = new Commited(this);
+        }
 
     }
 }

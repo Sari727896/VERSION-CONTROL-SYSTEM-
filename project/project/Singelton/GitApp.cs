@@ -74,7 +74,7 @@ namespace project.Singelton
             var userToAdd = Users.Find(u => u.GetId == user.GetId);
             if (userToAdd == null)
             {
-                Users.Add(userToAdd);
+                Users.Add(user);
             }
         }
         public static User GetUserById(int  id)

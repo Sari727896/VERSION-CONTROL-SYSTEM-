@@ -15,5 +15,14 @@ namespace project.Memento
         {
             this.Content = Content;
         }
+        public override string GetContent()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (var item in Content)
+            {
+                sb.AppendLine(item.ToString());
+            }
+            return sb.ToString();
+        }
     }
 }

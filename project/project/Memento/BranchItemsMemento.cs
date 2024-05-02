@@ -13,5 +13,6 @@ namespace project.Memento
         {
             TimeStamp = timeStamp;
         }
+        public abstract string GetContent();
     }
 }

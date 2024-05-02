@@ -16,5 +16,9 @@ namespace project.Memento
         {
             this.Content = Content;
         }
+        public override string GetContent()
+        {
+            return Content;
+        }
     }
 }

@@ -20,5 +20,17 @@ namespace project.Memento
             mementoes.Remove(lastState);
             return lastState;
         }
+        public string ShowHistory()
+        {
+            string result = "History of Branch Items Mementos:\n";
+
+            foreach (var memento in mementoes)
+            {
+                result += $"Memento: {memento.GetContent()}, TimeStamp: {memento.TimeStamp}\n";
+            }
+
+            return result;
+        }
     }
+
 }

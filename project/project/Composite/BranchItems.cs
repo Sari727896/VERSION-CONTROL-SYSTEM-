@@ -61,9 +61,9 @@ namespace project.Composite
 
         public abstract void Restore(BranchItemsMemento memento);
 
-        public void ShowHistory()
+        public string ShowHistoryToUser()
         {
-
+            return History.ShowHistory();
         }
         public string RemoveReviewer(User user)
         {

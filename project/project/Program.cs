@@ -121,8 +121,7 @@ gitApp.MainBranch.Branches= branches;
 CommitCommand commitCommand = new(folder2);
 MergeCommand mergeCommand = new(folder2,folder1);
 RequestAReviewCommand requestAReviewCommand = new(folder2);
-UndoTheCommitCommand undoTheCommitCommand = new(folder4); 
-//to ask how to merge two things.
+UndoTheCommitCommand undoTheCommitCommand = new(folder2); 
 user1.PlaceSystemItemRequest(commitCommand);
 user1.PlaceSystemItemRequest(mergeCommand);
 user1.PlaceSystemItemRequest(requestAReviewCommand);

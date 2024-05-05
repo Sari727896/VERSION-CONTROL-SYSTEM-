@@ -57,21 +57,30 @@ project.Composite.Folder folder1 = new("my first folder",4.2);
 project.Composite.Folder folder2 = new("my first folder", 4.2);
 project.Composite.Folder folder3 = new("my first folder", 4.2);
 project.Composite.Folder folder4 = new("my first folder", 4.2);
+#region composit
 folder1.AddItem(file1);
 folder1.AddItem(file2);
-folder1.AddItem(folder2);
 folder2.AddItem(file3);
-folder2.AddItem(folder3);
-folder3.AddItem(folder4);
-folder4.AddItem(file4);
 folder4.AddItem(file5);
 folder4.AddItem(file6);
 folder4.AddItem(file7);
+folder4.AddItem(file4);
+folder3.AddItem(folder4);
+folder2.AddItem(folder3);
+folder1.AddItem(folder2);
+
+
 folder4.RemoveItem(file7);
-
 #endregion
+#endregion
+List<BranchItems> items = new();
+items.Add(folder1);
+foreach(BranchItems item in items)
+{
+    Console.WriteLine(item.Name);
+}
 //to define list of branch item & user access
-
+//to do list of reviers
 //user.Update("sari727896@gmail.com");
 
 

@@ -9,13 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System;
 using project.Composite;
+using project.Enums;
 
 namespace project
 {//the user is a invoker
     public class User:IReviewer
     {
         public string UserName { get; private set; }
-
+        public UserAllowingAccess AllowingAccess { get; set; }
         private static int nextId = 1;
 
         private int id;
@@ -25,13 +26,14 @@ namespace project
 
         Queue<GitActionsCommand> actionsCommand;
 
-        public User(string UserName, string password, string Email)
+        public User(string UserName, string password, string Email, UserAllowingAccess AllowingAccess)
         {
             this.UserName = UserName;
             this.id = nextId++;
             this.Password = password;
             this.Email = Email;
             actionsCommand= new Queue<GitActionsCommand>();
+            this.AllowingAccess = AllowingAccess;
         }
         public Queue<GitActionsCommand> GetActionsCommand()
         {
@@ -63,7 +65,7 @@ namespace project
                 Console.WriteLine("You do not have permission to change the password");
         }
 
-        private string fromAddress = "sari727896@gmail.com"; // המייל שלך
+        private string fromAddress = "sari727896@gmail.com"; 
 
         public void Update( string toAddress,BranchItems item)
         {

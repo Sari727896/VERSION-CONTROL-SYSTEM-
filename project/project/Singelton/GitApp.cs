@@ -30,7 +30,7 @@ namespace project.Singelton
 
         public static GitApp GetInstance()
         {
-            User currentUser = new("Sari727896", "Sa326", "sari727896@gmail.com");
+            User currentUser = new("Sari727896", "Sa326", "sari727896@gmail.com",Enums.UserAllowingAccess.write);
             if (gitApp == null)
             {
                 lock (locker)

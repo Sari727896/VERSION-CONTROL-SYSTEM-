@@ -63,7 +63,7 @@ project.Composite.Folder folder1 = new("my first folder",4.2);
 project.Composite.Folder folder2 = new("my second folder", 4.2);
 project.Composite.Folder folder3 = new("my third folder", 4.2);
 project.Composite.Folder folder4 = new("my fourth folder", 4.2);
-#region composit
+#region composite
 folder1.AddItem(file1);
 folder1.AddItem(file2);
 folder2.AddItem(file3);
@@ -74,6 +74,7 @@ folder4.AddItem(file4);
 folder3.AddItem(folder4);
 folder2.AddItem(folder3);
 folder1.AddItem(folder2);
+
 
 
 folder4.RemoveItem(file7);

@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = project
-build_property.ProjectDir = C:\Users\User\Desktop\designPatterns-project\project\project\
+build_property.ProjectDir = C:\Users\USER\Desktop\design pattern final project\designPatterns-project\project\project\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

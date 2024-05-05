@@ -13,7 +13,6 @@ namespace project.Command
         public CommitCommand(BranchItems BranchItem) : base(BranchItem)
         {
         }
-
         public override string Execute()
         {
             return BranchItem.Commit();

@@ -27,6 +27,8 @@ namespace project.Composite
             this.Reviewers = new List<User>();
             History = new();
         }
+        public abstract string ShowDetails(string level);
+
         public void ChangeItemState(BranchItemsState newState)
         {
             State = newState;

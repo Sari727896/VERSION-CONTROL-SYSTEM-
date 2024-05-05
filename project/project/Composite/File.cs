@@ -15,7 +15,11 @@ namespace project.Composite
         {
             this.Content = Content;
         }
-
+        public override string ShowDetails(string level)
+        {
+            level += '\t';
+            return $"{level}{Name}, {Math.Round(Size, 2)}KB";
+        }
         public override string Merge(BranchItems item)
         {
             //State.Merge();

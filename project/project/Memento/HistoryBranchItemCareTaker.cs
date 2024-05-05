@@ -13,10 +13,21 @@ namespace project.Memento
         {
             mementoes.Add(state);
         }
+        //public BranchItemsMemento Pop()
+        //{
+        //    var lastIndex = mementoes.Count - 1;
+        //    var lastState = mementoes[lastIndex];
+        //    mementoes.Remove(lastState);
+        //    return lastState;
+        //}
         public BranchItemsMemento Pop()
         {
-            var lastIndex = mementoes.Count - 1;
-            var lastState = mementoes[lastIndex];
+            if (mementoes.Count == 0)
+            {
+                // כאן ניתן להחזיר ערך ברירת מחדל או לטפל באופן אחר במצב ריקות הרשימה
+                return null;
+            }
+            var lastState = mementoes[mementoes.Count - 1];
             mementoes.Remove(lastState);
             return lastState;
         }

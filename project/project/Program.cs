@@ -111,7 +111,15 @@ Branch branchc = new("Release  branch", brancha);
 Branch branchd = new("Hotfix  branch", brancha);
 List<Branch> branches = new() { brancha, branchb, branchc, branchd };
 gitApp.MainBranch.Branches= branches;
-
+brancha.AddItem(folder1);
+branchb.AddItem(folder2);
+branchc.AddItem(folder3);
+branchd.AddItem(file7);
+#region prototype
+brancha.Branches.Add(branchb);
+brancha.Branches.Add(branchc);
+WriteLine(brancha.CreateBranch("Release  branch", "Cloned Release  branch"));
+#endregion
 //to define list of branch item & user access
 //to do list of reviers
 //user.Update("sari727896@gmail.com");

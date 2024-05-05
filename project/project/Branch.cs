@@ -49,15 +49,14 @@ namespace project
             branchItems.Remove(itemToRemove);
             return $"The file {item.Name}  has been removed successfully";
         }
-        public Branch CreateBranch(string existingBranchName,string newBranchName)
+        public string CreateBranch(string existingBranchName,string newBranchName)
         {
             Branch existingBranch = Branches.Find(branch => branch.Name == existingBranchName);
             if (existingBranch != null)
             {
                 Branch newBranch = (Branch)existingBranch.Clone();
                 newBranch.Name = newBranchName;
-
-                return newBranch;
+                return $"the branch {newBranch.Name} created successfully";
             }
 
             return null;

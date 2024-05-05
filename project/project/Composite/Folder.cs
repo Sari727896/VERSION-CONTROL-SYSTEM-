@@ -17,6 +17,17 @@ namespace project.Composite
         {
             Items = new List<BranchItems>();
         }
+        public override string ShowDetails(string level)
+        {
+            level += '\t';
+            string details = $"{level}{Name}, {Math.Round(Size, 2)}KB";
+            foreach (var items in Items)
+            {
+                details += '\n';
+                details += items.ShowDetails(level);
+            }
+            return details;
+        }
         public void AddItem(BranchItems item)
         { 
             Items.Add(item); 

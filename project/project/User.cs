@@ -37,7 +37,7 @@ namespace project
         {
             return actionsCommand;
         }
-        public void PlacesystemItemRequest(GitActionsCommand command)
+        public void PlaceSystemItemRequest(GitActionsCommand command)
         {
             actionsCommand.Enqueue(command);
         }

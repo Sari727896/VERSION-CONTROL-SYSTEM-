@@ -12,16 +12,16 @@ using System.Reflection.Emit;
 using System.Xml.Linq;
 using static System.Console;
 #region GitApp
-User user1 = new("Sari Choen", "123456789", "sari727896@gmail.com");
-User user2 = new("Rivky Friedman", "987654321", "rivka0504173291@gmail.com");
-User user3 = new("Malki Domb", "246813579", "md382@gmail.com");
-User user4 = new User("David Levi", "111222333", "davidlevi@example.com");
-User user5 = new User("Rachel Cohen", "444555666", "rachelc@example.com");
-User user6 = new User("Yossi Goldberg", "777888999", "yossig@example.com");
-User user7 = new User("Esther Schwartz", "333222111", "esthers@example.com");
-User user8 = new User("Avi Cohen", "666777888", "avic@example.com");
-User user9 = new User("Leah Rosenberg", "999888777", "leahr@example.com");
-User user10 = new User("Yitzhak Green", "123123123", "yitzhakg@example.com");
+User user1 = new("Sari Choen", "123456789", "sari727896@gmail.com",UserAllowingAccess.write);
+User user2 = new("Rivky Friedman", "987654321", "rivka0504173291@gmail.com", UserAllowingAccess.write);
+User user3 = new("Malki Domb", "246813579", "md382@gmail.com", UserAllowingAccess.read);
+User user4 = new User("David Levi", "111222333", "davidlevi@example.com", UserAllowingAccess.read);
+User user5 = new User("Rachel Cohen", "444555666", "rachelc@example.com", UserAllowingAccess.read);
+User user6 = new User("Yossi Goldberg", "777888999", "yossig@example.com",UserAllowingAccess.read);
+User user7 = new User("Esther Schwartz", "333222111", "esthers@example.com", UserAllowingAccess.read);
+User user8 = new User("Avi Cohen", "666777888", "avic@example.com",UserAllowingAccess.read);
+User user9 = new User("Leah Rosenberg", "999888777", "leahr@example.com", UserAllowingAccess.read);
+User user10 = new User("Yitzhak Green", "123123123", "yitzhakg@example.com", UserAllowingAccess.read);
 GitApp gitApp = GitApp.GetInstance();
 gitApp.ChangeCurrentUser(user1);
 gitApp.AddUser(user2);
@@ -115,11 +115,7 @@ brancha.AddItem(folder1);
 branchb.AddItem(folder2);
 branchc.AddItem(folder3);
 branchd.AddItem(file7);
-#region prototype
-brancha.Branches.Add(branchb);
-brancha.Branches.Add(branchc);
-WriteLine(brancha.CreateBranch("Release  branch", "Cloned Release  branch"));
-#endregion
+
 //to define list of branch item & user access
 //to do list of reviers
 //user.Update("sari727896@gmail.com");
@@ -127,13 +123,45 @@ WriteLine(brancha.CreateBranch("Release  branch", "Cloned Release  branch"));
 //branch item is a reciver and the user is the invoker
 #region command
 
-CommitCommand commitCommand = new(folder2);
-MergeCommand mergeCommand = new(folder2,folder1);
-RequestAReviewCommand requestAReviewCommand = new(folder2);
-UndoTheCommitCommand undoTheCommitCommand = new(folder2); 
-user1.PlaceSystemItemRequest(commitCommand);
-user1.PlaceSystemItemRequest(mergeCommand);
-user1.PlaceSystemItemRequest(requestAReviewCommand);
-user1.PlaceSystemItemRequest(undoTheCommitCommand);
+//CommitCommand commitCommand = new(folder2);
+//MergeCommand mergeCommand = new(folder2,folder1);
+//RequestAReviewCommand requestAReviewCommand = new(folder2);
+//UndoTheCommitCommand undoTheCommitCommand = new(folder2);
+//if (user1.AllowingAccess == UserAllowingAccess.write)
+//{
+//user1.PlaceSystemItemRequest(commitCommand);
+//user1.PlaceSystemItemRequest(mergeCommand);
+//user1.PlaceSystemItemRequest(requestAReviewCommand);
+//user1.PlaceSystemItemRequest(undoTheCommitCommand);
+//WriteLine(user1.DoJob());
+
+//}
+//else
+//{
+//    WriteLine("You do not have permission to perform actions");
+//}
+    
+#endregion
+#region prototype
+brancha.Branches.Add(branchb);
+brancha.Branches.Add(branchc);
+WriteLine(brancha.CreateBranch("Release  branch", "Cloned Release  branch"));
+#endregion
+#region flyweight
+brancha.AddItem(file1);
+brancha.AddItem(file2);
+brancha.ChangeFile("my first file", "We try to change the file;");
+brancha.ChangeFile("my second file", "this is my second content");
+#endregion
+#region momento
+#endregion
+#region observer
+List<User>reviewrs=new();
+reviewrs.Add(user1);
+reviewrs.Add(user2);
+reviewrs.Add(user3);
+reviewrs.Add(user4);
+folder1.Reviewers=reviewrs;
+RequestAReviewCommand requestAReviewCommand2 = new(folder1);
 WriteLine(user1.DoJob());
-    #endregion
+#endregion

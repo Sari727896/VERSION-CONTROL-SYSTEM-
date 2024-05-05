@@ -9,13 +9,15 @@ namespace project.Command
 {
     public class MergeCommand : GitActionsCommand
     {
-        public MergeCommand(BranchItems BranchItem) : base(BranchItem)
+        public BranchItems ItemToMerge { get; set; }
+        public MergeCommand(BranchItems BranchItem, BranchItems itemToMerge) : base(BranchItem)
         {
+            ItemToMerge = itemToMerge;
         }
 
         public override string Execute()
         {
-          return BranchItem.Merge(BranchItem);
+          return BranchItem.Merge(ItemToMerge);
         }
     }
 }

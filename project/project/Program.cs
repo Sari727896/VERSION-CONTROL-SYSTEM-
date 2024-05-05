@@ -60,9 +60,9 @@ project.Composite.File file5 = new("my fifth file", 2.5, content5);
 project.Composite.File file6 = new("my sixth file", 2.9, content6);
 project.Composite.File file7 = new("my seventh file", 3.1, content7);
 project.Composite.Folder folder1 = new("my first folder",4.2);
-project.Composite.Folder folder2 = new("my first folder", 4.2);
-project.Composite.Folder folder3 = new("my first folder", 4.2);
-project.Composite.Folder folder4 = new("my first folder", 4.2);
+project.Composite.Folder folder2 = new("my second folder", 4.2);
+project.Composite.Folder folder3 = new("my third folder", 4.2);
+project.Composite.Folder folder4 = new("my fourth folder", 4.2);
 #region composit
 folder1.AddItem(file1);
 folder1.AddItem(file2);
@@ -119,7 +119,7 @@ gitApp.MainBranch.Branches= branches;
 #region command
 
 CommitCommand commitCommand = new(folder2);
-MergeCommand mergeCommand = new(folder1);
+MergeCommand mergeCommand = new(folder2,folder1);
 RequestAReviewCommand requestAReviewCommand = new(folder2);
 UndoTheCommitCommand undoTheCommitCommand = new(folder4); 
 //to ask how to merge two things.

@@ -50,7 +50,7 @@ namespace project.Composite
            
             State.RequestAReview();
             NotifyReviewer("sari727896@gmail.com");
-            return "to do with observer";
+            return "The application is being processed";
         }
         public abstract void ChangeContent(FileContent content);
         public abstract string Merge(BranchItems item);

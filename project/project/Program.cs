@@ -115,11 +115,7 @@ brancha.AddItem(folder1);
 branchb.AddItem(folder2);
 branchc.AddItem(folder3);
 branchd.AddItem(file7);
-#region prototype
-brancha.Branches.Add(branchb);
-brancha.Branches.Add(branchc);
-WriteLine(brancha.CreateBranch("Release  branch", "Cloned Release  branch"));
-#endregion
+
 //to define list of branch item & user access
 //to do list of reviers
 //user.Update("sari727896@gmail.com");
@@ -136,4 +132,16 @@ user1.PlaceSystemItemRequest(mergeCommand);
 user1.PlaceSystemItemRequest(requestAReviewCommand);
 user1.PlaceSystemItemRequest(undoTheCommitCommand);
 WriteLine(user1.DoJob());
-    #endregion
+#endregion
+#region prototype
+brancha.Branches.Add(branchb);
+brancha.Branches.Add(branchc);
+WriteLine(brancha.CreateBranch("Release  branch", "Cloned Release  branch"));
+#endregion
+#region flyweight
+brancha.AddItem(file1);
+brancha.AddItem(file2);
+brancha.ChangeFile("my first file", "We try to change the file;");
+brancha.ChangeFile("my second file", "this is my second content");
+
+#endregion

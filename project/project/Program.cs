@@ -116,31 +116,32 @@ branchb.AddItem(folder2);
 branchc.AddItem(folder3);
 branchd.AddItem(file7);
 
-//to define list of branch item & user access
-//to do list of reviers
-//user.Update("sari727896@gmail.com");
+#region command & state
 
-//branch item is a reciver and the user is the invoker
-#region command
+CommitCommand commitCommand = new(folder2);
+MergeCommand mergeCommand = new(folder2, folder1);
+RequestAReviewCommand requestAReviewCommand = new(folder2);
+UndoTheCommitCommand undoTheCommitCommand = new(folder2);
+if (user1.AllowingAccess == UserAllowingAccess.write)
+{
+    user1.PlaceSystemItemRequest(commitCommand);
+    user1.PlaceSystemItemRequest(mergeCommand);
+    user1.PlaceSystemItemRequest(requestAReviewCommand);
+    user1.PlaceSystemItemRequest(undoTheCommitCommand);
+    WriteLine(user1.DoJob());
 
-//CommitCommand commitCommand = new(folder2);
-//MergeCommand mergeCommand = new(folder2,folder1);
-//RequestAReviewCommand requestAReviewCommand = new(folder2);
-//UndoTheCommitCommand undoTheCommitCommand = new(folder2);
-//if (user1.AllowingAccess == UserAllowingAccess.write)
-//{
-//user1.PlaceSystemItemRequest(commitCommand);
-//user1.PlaceSystemItemRequest(mergeCommand);
-//user1.PlaceSystemItemRequest(requestAReviewCommand);
-//user1.PlaceSystemItemRequest(undoTheCommitCommand);
-//WriteLine(user1.DoJob());
+}
+else
+{
+    WriteLine("You do not have permission to perform actions");
+}
 
-//}
-//else
-//{
-//    WriteLine("You do not have permission to perform actions");
-//}
-    
+#endregion
+#region branchState
+WriteLine(branch2.UnlockBranch());
+WriteLine(branch2.HandleBranch());
+WriteLine(branch2.MergeBranch());
+WriteLine(branch2.LockBranch());
 #endregion
 #region prototype
 brancha.Branches.Add(branchb);
@@ -163,5 +164,6 @@ reviewrs.Add(user3);
 reviewrs.Add(user4);
 folder1.Reviewers=reviewrs;
 RequestAReviewCommand requestAReviewCommand2 = new(folder1);
+user1.PlaceSystemItemRequest(requestAReviewCommand2);
 WriteLine(user1.DoJob());
 #endregion

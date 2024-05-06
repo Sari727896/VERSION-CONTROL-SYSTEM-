@@ -46,7 +46,7 @@ namespace project
         public string DoJob()
         {
             string s = "";
-            while(actionsCommand.Count > 0)
+            while(actionsCommand.Count >0)
             {
                 var commandToDO = actionsCommand.Dequeue();
                 s += commandToDO.Execute();

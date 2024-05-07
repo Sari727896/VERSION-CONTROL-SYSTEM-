@@ -146,13 +146,14 @@ WriteLine(branch2.LockBranch());
 #region prototype
 brancha.Branches.Add(branchb);
 brancha.Branches.Add(branchc);
-WriteLine(brancha.CreateBranch("Release  branch", "Cloned Release  branch"));
-#endregion
-#region flyweight
 brancha.AddItem(file1);
 brancha.AddItem(file2);
-brancha.ChangeFile("my first file", "We try to change the file;");
-brancha.ChangeFile("my second file", "this is my second content");
+//Branch branchf = brancha.CreateBranch("main", "Cloned main branch");
+//WriteLine();
+#endregion
+#region flyweight
+//branchf.ChangeFile("my first file", "We try to change the file;");
+//branchf.ChangeFile("my first file", "this is my second content");
 #endregion
 #region momento
 #endregion

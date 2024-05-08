@@ -9,9 +9,11 @@ namespace project.Memento
     public class HistoryBranchItemCareTaker
     {
         private List<BranchItemsMemento> mementoes = new List<BranchItemsMemento>();
+        private List<BranchItemsMemento> mementoes1 = new List<BranchItemsMemento>();
         public void Push(BranchItemsMemento state)
         {
             mementoes.Add(state);
+            mementoes1.Add(state);
         }
         //public BranchItemsMemento Pop()
         //{
@@ -35,7 +37,7 @@ namespace project.Memento
         {
             string result = "History of Branch Items Mementos:\n";
 
-            foreach (var memento in mementoes)
+            foreach (var memento in mementoes1)
             {
                 result += $"Memento: {memento.GetContent()}, TimeStamp: {memento.TimeStamp}\n";
             }

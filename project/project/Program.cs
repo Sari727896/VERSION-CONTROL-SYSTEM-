@@ -157,6 +157,7 @@ branchf.ChangeFile("my first file", "We try to change the file;");
 branchf.ChangeFile("my first file", "this is my second content");
 #endregion
 #region momento
+WriteLine(folder2.ShowHistoryToUser());
 #endregion
 #region observer
 List<User>reviewrs=new();

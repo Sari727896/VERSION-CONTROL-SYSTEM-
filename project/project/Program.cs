@@ -83,6 +83,7 @@ folder4.RemoveItem(file7);
 #endregion
 List<BranchItems> items = new();
 items.Add(folder1);
+WriteLine("_________________BranchItemsDetails_____________");
 WriteLine(folder1.ShowDetails(""));
 List<UserAccess> userAccess = new();
 //to do validates
@@ -129,6 +130,7 @@ if (user1.AllowingAccess == UserAllowingAccess.write)
     user1.PlaceSystemItemRequest(mergeCommand);
     user1.PlaceSystemItemRequest(requestAReviewCommand);
     user1.PlaceSystemItemRequest(undoTheCommitCommand);
+    WriteLine("__________Command__________");
     WriteLine(user1.DoJob());
 
 }
@@ -139,6 +141,7 @@ else
 
 #endregion
 #region branchState
+WriteLine("_________________BranchState_____________");
 WriteLine(branch2.UnlockBranch());
 WriteLine(branch2.HandleBranch());
 WriteLine(branch2.MergeBranch());
@@ -157,6 +160,7 @@ branchf.ChangeFile("my first file", "We try to change the file;");
 branchf.ChangeFile("my first file", "this is my second content");
 #endregion
 #region momento
+WriteLine("_________________HistoryMenento_____________");
 WriteLine(folder2.ShowHistoryToUser());
 #endregion
 #region observer
@@ -168,5 +172,6 @@ reviewrs.Add(user4);
 folder1.Reviewers=reviewrs;
 RequestAReviewCommand requestAReviewCommand2 = new(folder1);
 user1.PlaceSystemItemRequest(requestAReviewCommand2);
+WriteLine("_________________Observer_____________");
 WriteLine(user1.DoJob());
 #endregion

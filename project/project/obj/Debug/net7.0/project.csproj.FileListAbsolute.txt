@@ -35,3 +35,25 @@ C:\Users\User\Desktop\designPatterns-project\project\project\bin\Debug\net7.0\Sy
 C:\Users\User\Desktop\designPatterns-project\project\project\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\User\Desktop\designPatterns-project\project\project\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\User\Desktop\designPatterns-project\project\project\obj\Debug\net7.0\project.csproj.CopyComplete
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\bin\Debug\net7.0\project.exe
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\bin\Debug\net7.0\project.deps.json
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\bin\Debug\net7.0\project.runtimeconfig.json
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\bin\Debug\net7.0\project.dll
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\bin\Debug\net7.0\project.pdb
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\bin\Debug\net7.0\MailKit.dll
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\bin\Debug\net7.0\MimeKit.dll
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\bin\Debug\net7.0\System.Formats.Asn1.dll
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\obj\Debug\net7.0\project.csproj.AssemblyReference.cache
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\obj\Debug\net7.0\project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\obj\Debug\net7.0\project.AssemblyInfoInputs.cache
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\obj\Debug\net7.0\project.AssemblyInfo.cs
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\obj\Debug\net7.0\project.csproj.CoreCompileInputs.cache
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\obj\Debug\net7.0\project.csproj.CopyComplete
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\obj\Debug\net7.0\project.dll
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\obj\Debug\net7.0\refint\project.dll
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\obj\Debug\net7.0\project.pdb
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\obj\Debug\net7.0\project.genruntimeconfig.cache
+C:\Users\פרידמן רבקה\Downloads\designPatterns-project\project\project\obj\Debug\net7.0\ref\project.dll

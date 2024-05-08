@@ -64,7 +64,7 @@ project.Composite.Folder folder2 = new("my second folder", 4.2);
 project.Composite.Folder folder3 = new("my third folder", 4.2);
 project.Composite.Folder folder4 = new("my fourth folder", 4.2);
 #region composite
-folder1.AddItem(file1);
+
 folder1.AddItem(file2);
 folder2.AddItem(file3);
 folder4.AddItem(file5);
@@ -72,6 +72,7 @@ folder4.AddItem(file6);
 folder4.AddItem(file7);
 folder4.AddItem(file4);
 folder3.AddItem(folder4);
+folder3.AddItem(file1);
 folder2.AddItem(folder3);
 folder1.AddItem(folder2);
 
@@ -111,7 +112,7 @@ Branch branchc = new("Release  branch", brancha);
 Branch branchd = new("Hotfix  branch", brancha);
 List<Branch> branches = new() { brancha, branchb, branchc, branchd };
 gitApp.MainBranch.Branches= branches;
-brancha.AddItem(folder1);
+brancha.AddItem(folder3);
 branchb.AddItem(folder2);
 branchc.AddItem(folder3);
 branchd.AddItem(file7);
@@ -148,12 +149,12 @@ brancha.Branches.Add(branchb);
 brancha.Branches.Add(branchc);
 brancha.AddItem(file1);
 brancha.AddItem(file2);
-//Branch branchf = brancha.CreateBranch("main", "Cloned main branch");
+Branch branchf = brancha.CreateBranch("main", "Cloned main branch");
 //WriteLine();
 #endregion
 #region flyweight
-//branchf.ChangeFile("my first file", "We try to change the file;");
-//branchf.ChangeFile("my first file", "this is my second content");
+branchf.ChangeFile("my first file", "We try to change the file;");
+branchf.ChangeFile("my first file", "this is my second content");
 #endregion
 #region momento
 #endregion

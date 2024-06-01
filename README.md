@@ -28,22 +28,21 @@ This project is a simulation of a Git-like platform developed in C#. It leverage
 
 ### Prerequisites
 
-- [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
+- [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet/7.0)
 
 ### Installation
 
 1. Clone the repository:
-2. [    git clone https://github.com/YourUsername/Git-Simulation.git
-](https://github.com/Sari727896/VERSION-CONTROL-SYSTEM-.git) 
     ```sh
-   ```
+    git clone https://github.com/Sari727896/VERSION-CONTROL-SYSTEM-.git
+    ```
 
-3. Navigate to the project directory:
+2. Navigate to the project directory:
     ```sh
     cd Git-Simulation
     ```
 
-4. Build the project:
+3. Build the project:
     ```sh
     dotnet build
     ```

@@ -33,16 +33,17 @@ This project is a simulation of a Git-like platform developed in C#. It leverage
 ### Installation
 
 1. Clone the repository:
+2. [    git clone https://github.com/YourUsername/Git-Simulation.git
+](https://github.com/Sari727896/VERSION-CONTROL-SYSTEM-.git) 
     ```sh
-[    git clone https://github.com/YourUsername/Git-Simulation.git
-](https://github.com/Sari727896/VERSION-CONTROL-SYSTEM-.git)    ```
+   ```
 
-2. Navigate to the project directory:
+3. Navigate to the project directory:
     ```sh
     cd Git-Simulation
     ```
 
-3. Build the project:
+4. Build the project:
     ```sh
     dotnet build
     ```

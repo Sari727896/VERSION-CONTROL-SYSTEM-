@@ -39,7 +39,7 @@ This project is a simulation of a Git-like platform developed in C#. It leverage
 
 2. Navigate to the project directory:
     ```sh
-    cd Git-Simulation
+    cd VERSION-CONTROL-SYSTEM
     ```
 
 3. Build the project:

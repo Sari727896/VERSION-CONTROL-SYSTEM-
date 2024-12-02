@@ -36,38 +36,29 @@ namespace project.Composite
 
         public override object Clone()
         {
-            File clonedItem = new File(this.Name, this.Size,this.Content);
-            //clonedItem.State = this.State;
-            //clonedItem.Reviewers = new List<User>(this.Reviewers);
+            File clonedItem = new File(this.Name, this.Size, this.Content);
             return clonedItem;
         }
 
         public override void ChangeContent(FileContent content)
         {
-            this.Content=content;
+            this.Content = content;
         }
 
         public override BranchItemsMemento CreateState()
         {
-            return new FileMemento(DateTime.Now,Content.Content);
+            return new FileMemento(DateTime.Now, Content.Content);
         }
 
         public override void Restore(BranchItemsMemento state)
         {
-            if(state is FileMemento)
+            if (state is FileMemento)
             {
                 var fileMementoState = state as FileMemento;
                 Content.Content = fileMementoState.Content;
             }
-            //else
-            //{
-            //    throw new Exception("")
-            //}
+
         }
 
-        //public override string MergeFolder(Folder folder)
-        //{
-        //    return "Can not merge file with folder";
-        //}
     }
 }

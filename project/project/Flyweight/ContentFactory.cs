@@ -16,8 +16,8 @@ namespace project.Flyweight
 
         static ContentFactory()
         {
-            existingContent= new Dictionary<string, FileContent>();
-            locker= new object();
+            existingContent = new Dictionary<string, FileContent>();
+            locker = new object();
         }
         public static ContentFactory GetInstance()
         {
@@ -33,7 +33,7 @@ namespace project.Flyweight
             }
             return fileFactory;
         }
-        public static FileContent GetContent(int brnachId,string fileName,string content)
+        public static FileContent GetContent(int brnachId, string fileName, string content)
         {
             string contentKey = $"{brnachId.ToString()}_{fileName}";
             if (existingContent.ContainsKey(contentKey))
@@ -41,7 +41,7 @@ namespace project.Flyweight
                 return existingContent[contentKey];
             }
             FileContent content1 = new(content);
-            existingContent.Add(contentKey,content1);
+            existingContent.Add(contentKey, content1);
             return content1;
         }
     }

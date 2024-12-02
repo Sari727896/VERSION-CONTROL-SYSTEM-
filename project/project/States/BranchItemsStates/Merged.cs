@@ -21,7 +21,6 @@ namespace project.States.BranchItemsStates
 
         public override void Merge()
         {
-            //return "Cannot merge in merged state.\n";
             throw new Exception("Cannot merge in merged state.\n");
         }
 
@@ -33,7 +32,6 @@ namespace project.States.BranchItemsStates
 
         public override string UndoTheCommit()
         {
-            //To do
             return "Undoing the commit and reverting to the previous state.\n";
         }
     }

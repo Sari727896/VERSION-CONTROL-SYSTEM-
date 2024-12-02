@@ -29,23 +29,18 @@ namespace project.Composite
             return details;
         }
         public void AddItem(BranchItems item)
-        { 
-            Items.Add(item); 
+        {
+            Items.Add(item);
         }
         public void RemoveItem(BranchItems item)
         {
-            var itemToRemove=Items.Find(i=>i.Name==item.Name);
+            var itemToRemove = Items.Find(i => i.Name == item.Name);
             Items.Remove(itemToRemove);
         }
 
-        //public override string MergeFile(File file)
-        //{
-        //    return "Can not merge file with folder";
-        //}
-
         public override string Merge(BranchItems item)
         {
-            if(item is File)
+            if (item is File)
                 return "Can not merge file with folder";
             Folder folder = item as Folder;
             if (folder == null)
@@ -58,20 +53,9 @@ namespace project.Composite
         public override object Clone()
         {
             Folder clonedFolder = new Folder(this.Name, this.Size);
-            clonedFolder.State = this.State; // העתקה עמוקה של State
+            clonedFolder.State = this.State;
 
-            // העתקה עמוקה של Reviewers
-            //clonedFolder.Reviewers = new List<User>();
-            //foreach (User reviewer in this.Reviewers)
-            //{
-            //    User clonedReviewer = new User(reviewer.UserName, reviewer.Password, reviewer.Email);
-            //    clonedFolder.Reviewers.Add(clonedReviewer);
-            //}
 
-            // העתקה עמוקה של actionsCommand
-            //clonedFolder.actionsCommand = new Queue<GitActionsCommand>(this.actionsCommand);
-
-            // העתקה עמוקה של רשימת הפריטים בתוך התיקייה
             foreach (BranchItems item in this.Items)
             {
                 clonedFolder.Items.Add((BranchItems)item.Clone());
@@ -82,7 +66,7 @@ namespace project.Composite
 
         public override void ChangeContent(FileContent content)
         {
-            throw new Exception("you can change only file"); 
+            throw new Exception("you can change only file");
         }
 
         public override BranchItemsMemento CreateState()
@@ -98,10 +82,7 @@ namespace project.Composite
                 var folderMementoState = state as FolderMemento;
                 Items = folderMementoState.Content;
             }
-            //else
-            //{
-            //    throw new Exception("")
-            //}
+
         }
     }
 }

@@ -13,14 +13,14 @@ using project.Enums;
 using System.Net.Mime;
 namespace project
 {//the user is a invoker
-    public class User:IReviewer
+    public class User : IReviewer
     {
         public string UserName { get; private set; }
         public UserAllowingAccess AllowingAccess { get; set; }
         private static int nextId = 1;
 
         private int id;
-        public string Password { get;private set; }
+        public string Password { get; private set; }
         public string Email { get; private set; }
         public BranchItems ItemToCheck { get; set; }
 
@@ -32,7 +32,7 @@ namespace project
             this.id = nextId++;
             this.Password = password;
             this.Email = Email;
-            actionsCommand= new Queue<GitActionsCommand>();
+            actionsCommand = new Queue<GitActionsCommand>();
             this.AllowingAccess = AllowingAccess;
         }
         public Queue<GitActionsCommand> GetActionsCommand()
@@ -46,7 +46,7 @@ namespace project
         public string DoJob()
         {
             string s = "";
-            while(actionsCommand.Count >0)
+            while (actionsCommand.Count > 0)
             {
                 var commandToDO = actionsCommand.Dequeue();
                 s += commandToDO.Execute();
@@ -64,8 +64,8 @@ namespace project
             else
                 Console.WriteLine("You do not have permission to change the password");
         }
-        private string fromAddress = "sari727896@gmail.com"; 
-        public void Update( string toAddress,BranchItems item)
+        private string fromAddress = "sari727896@gmail.com";
+        public void Update(string toAddress, BranchItems item)
         {
             // Specify the sender's email address and password
             string from = "srykhn95@gmail.com";
@@ -100,13 +100,13 @@ namespace project
 
         public void ConfirmRequest()
         {
-           ItemToCheck.ConfirmCommit();
+            ItemToCheck.ConfirmCommit();
         }
 
-        public  int GetId
+        public int GetId
         {
             get { return id; }
         }
-        
+
     }
 }

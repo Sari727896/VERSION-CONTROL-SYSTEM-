@@ -16,7 +16,7 @@ namespace project.States.BranchStates
         public override string HandleBranch()
         {
             branch.ChangeState(new HandleBranchState(branch));
-            return   "Handling branch...";
+            return "Handling branch...";
         }
 
         public override string LockBranch()

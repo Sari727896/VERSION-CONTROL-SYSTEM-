@@ -1,0 +1,581 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\useraccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\useraccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\states\\branchstates\\unlockbranchstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\states\\branchstates\\unlockbranchstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\states\\branchstates\\lockbranchstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\states\\branchstates\\lockbranchstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\states\\branchstates\\mergestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\states\\branchstates\\mergestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\states\\branchstates\\handlebranchstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\states\\branchstates\\handlebranchstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\states\\branchstates\\branchstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\states\\branchstates\\branchstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\states\\branchitemsstates\\underreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\states\\branchitemsstates\\underreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\states\\branchitemsstates\\staged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\states\\branchitemsstates\\staged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\states\\branchitemsstates\\readytomerge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\states\\branchitemsstates\\readytomerge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\states\\branchitemsstates\\merged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\states\\branchitemsstates\\merged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\states\\branchitemsstates\\draft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\states\\branchitemsstates\\draft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\states\\branchitemsstates\\commited.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\states\\branchitemsstates\\commited.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\states\\branchitemsstates\\branchitemsstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\states\\branchitemsstates\\branchitemsstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\singelton\\gitapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\singelton\\gitapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\osberver\\ireviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\osberver\\ireviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\memento\\historybranchitemcaretaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\memento\\historybranchitemcaretaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\memento\\foldermemento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\memento\\foldermemento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\memento\\filememento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\memento\\filememento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\memento\\branchitemsmemento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\memento\\branchitemsmemento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\flyweight\\filecontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\flyweight\\filecontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\flyweight\\contentfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\flyweight\\contentfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\enums\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\enums\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\composite\\folder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\composite\\folder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\composite\\file.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\composite\\file.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\composite\\branchitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\composite\\branchitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\command\\undothecommitcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\command\\undothecommitcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\command\\requestareviewcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\command\\requestareviewcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\command\\mergecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\command\\mergecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\command\\gitactionscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\command\\gitactionscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|c:\\users\\user\\downloads\\version-control-system-\\project\\project\\command\\commitcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2704470-1CAD-431D-95E0-2E3FB24989D2}|project\\project.csproj|solutionrelative:project\\command\\commitcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 22,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\User.cs",
+              "RelativeDocumentMoniker": "project\\User.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\User.cs",
+              "RelativeToolTip": "project\\User.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAiwG4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Draft.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchItemsStates\\Draft.cs",
+              "RelativeDocumentMoniker": "project\\States\\BranchItemsStates\\Draft.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchItemsStates\\Draft.cs",
+              "RelativeToolTip": "project\\States\\BranchItemsStates\\Draft.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowCYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BranchItemsMemento.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Memento\\BranchItemsMemento.cs",
+              "RelativeDocumentMoniker": "project\\Memento\\BranchItemsMemento.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Memento\\BranchItemsMemento.cs",
+              "RelativeToolTip": "project\\Memento\\BranchItemsMemento.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAmwAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Commited.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchItemsStates\\Commited.cs",
+              "RelativeDocumentMoniker": "project\\States\\BranchItemsStates\\Commited.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchItemsStates\\Commited.cs",
+              "RelativeToolTip": "project\\States\\BranchItemsStates\\Commited.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BranchItemsState.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchItemsStates\\BranchItemsState.cs",
+              "RelativeDocumentMoniker": "project\\States\\BranchItemsStates\\BranchItemsState.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchItemsStates\\BranchItemsState.cs",
+              "RelativeToolTip": "project\\States\\BranchItemsStates\\BranchItemsState.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAkwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Folder.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Composite\\Folder.cs",
+              "RelativeDocumentMoniker": "project\\Composite\\Folder.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Composite\\Folder.cs",
+              "RelativeToolTip": "project\\Composite\\Folder.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAlwFQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FolderMemento.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Memento\\FolderMemento.cs",
+              "RelativeDocumentMoniker": "project\\Memento\\FolderMemento.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Memento\\FolderMemento.cs",
+              "RelativeToolTip": "project\\Memento\\FolderMemento.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HistoryBranchItemCareTaker.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Memento\\HistoryBranchItemCareTaker.cs",
+              "RelativeDocumentMoniker": "project\\Memento\\HistoryBranchItemCareTaker.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Memento\\HistoryBranchItemCareTaker.cs",
+              "RelativeToolTip": "project\\Memento\\HistoryBranchItemCareTaker.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAEwCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FileMemento.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Memento\\FileMemento.cs",
+              "RelativeDocumentMoniker": "project\\Memento\\FileMemento.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Memento\\FileMemento.cs",
+              "RelativeToolTip": "project\\Memento\\FileMemento.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAiwBQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CommitCommand.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Command\\CommitCommand.cs",
+              "RelativeDocumentMoniker": "project\\Command\\CommitCommand.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Command\\CommitCommand.cs",
+              "RelativeToolTip": "project\\Command\\CommitCommand.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwAoAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Program.cs",
+              "RelativeDocumentMoniker": "project\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Program.cs",
+              "RelativeToolTip": "project\\Program.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAmwHYAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BranchItems.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Composite\\BranchItems.cs",
+              "RelativeDocumentMoniker": "project\\Composite\\BranchItems.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Composite\\BranchItems.cs",
+              "RelativeToolTip": "project\\Composite\\BranchItems.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAYwDAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "File.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Composite\\File.cs",
+              "RelativeDocumentMoniker": "project\\Composite\\File.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Composite\\File.cs",
+              "RelativeToolTip": "project\\Composite\\File.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAAAD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LockBranchState.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchStates\\LockBranchState.cs",
+              "RelativeDocumentMoniker": "project\\States\\BranchStates\\LockBranchState.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchStates\\LockBranchState.cs",
+              "RelativeToolTip": "project\\States\\BranchStates\\LockBranchState.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAArwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Branch.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Branch.cs",
+              "RelativeDocumentMoniker": "project\\Branch.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Branch.cs",
+              "RelativeToolTip": "project\\Branch.cs",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAAAHQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UnderReview.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchItemsStates\\UnderReview.cs",
+              "RelativeDocumentMoniker": "project\\States\\BranchItemsStates\\UnderReview.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchItemsStates\\UnderReview.cs",
+              "RelativeToolTip": "project\\States\\BranchItemsStates\\UnderReview.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAkwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "RequestAReviewCommand.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Command\\RequestAReviewCommand.cs",
+              "RelativeDocumentMoniker": "project\\Command\\RequestAReviewCommand.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Command\\RequestAReviewCommand.cs",
+              "RelativeToolTip": "project\\Command\\RequestAReviewCommand.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAD4vxIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BranchState.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchStates\\BranchState.cs",
+              "RelativeDocumentMoniker": "project\\States\\BranchStates\\BranchState.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchStates\\BranchState.cs",
+              "RelativeToolTip": "project\\States\\BranchStates\\BranchState.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAWwBQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ContentFactory.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Flyweight\\ContentFactory.cs",
+              "RelativeDocumentMoniker": "project\\Flyweight\\ContentFactory.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Flyweight\\ContentFactory.cs",
+              "RelativeToolTip": "project\\Flyweight\\ContentFactory.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAgwDAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "MergeCommand.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Command\\MergeCommand.cs",
+              "RelativeDocumentMoniker": "project\\Command\\MergeCommand.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Command\\MergeCommand.cs",
+              "RelativeToolTip": "project\\Command\\MergeCommand.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAswBQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HandleBranchState.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchStates\\HandleBranchState.cs",
+              "RelativeDocumentMoniker": "project\\States\\BranchStates\\HandleBranchState.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchStates\\HandleBranchState.cs",
+              "RelativeToolTip": "project\\States\\BranchStates\\HandleBranchState.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAkwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Enums\\Enums.cs",
+              "RelativeDocumentMoniker": "project\\Enums\\Enums.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Enums\\Enums.cs",
+              "RelativeToolTip": "project\\Enums\\Enums.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserAccess.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\UserAccess.cs",
+              "RelativeDocumentMoniker": "project\\UserAccess.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\UserAccess.cs",
+              "RelativeToolTip": "project\\UserAccess.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FileContent.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Flyweight\\FileContent.cs",
+              "RelativeDocumentMoniker": "project\\Flyweight\\FileContent.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Flyweight\\FileContent.cs",
+              "RelativeToolTip": "project\\Flyweight\\FileContent.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UndoTheCommitCommand.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Command\\UndoTheCommitCommand.cs",
+              "RelativeDocumentMoniker": "project\\Command\\UndoTheCommitCommand.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Command\\UndoTheCommitCommand.cs",
+              "RelativeToolTip": "project\\Command\\UndoTheCommitCommand.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Merged.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchItemsStates\\Merged.cs",
+              "RelativeDocumentMoniker": "project\\States\\BranchItemsStates\\Merged.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchItemsStates\\Merged.cs",
+              "RelativeToolTip": "project\\States\\BranchItemsStates\\Merged.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAD4vyIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Staged.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchItemsStates\\Staged.cs",
+              "RelativeDocumentMoniker": "project\\States\\BranchItemsStates\\Staged.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchItemsStates\\Staged.cs",
+              "RelativeToolTip": "project\\States\\BranchItemsStates\\Staged.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAuwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "GitActionsCommand.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Command\\GitActionsCommand.cs",
+              "RelativeDocumentMoniker": "project\\Command\\GitActionsCommand.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Command\\GitActionsCommand.cs",
+              "RelativeToolTip": "project\\Command\\GitActionsCommand.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAIA2wBMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GitApp.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Singelton\\GitApp.cs",
+              "RelativeDocumentMoniker": "project\\Singelton\\GitApp.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Singelton\\GitApp.cs",
+              "RelativeToolTip": "project\\Singelton\\GitApp.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IReviewer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Osberver\\IReviewer.cs",
+              "RelativeDocumentMoniker": "project\\Osberver\\IReviewer.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\Osberver\\IReviewer.cs",
+              "RelativeToolTip": "project\\Osberver\\IReviewer.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAAAsAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UnlockBranchState.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchStates\\UnlockBranchState.cs",
+              "RelativeDocumentMoniker": "project\\States\\BranchStates\\UnlockBranchState.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchStates\\UnlockBranchState.cs",
+              "RelativeToolTip": "project\\States\\BranchStates\\UnlockBranchState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MergeState.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchStates\\MergeState.cs",
+              "RelativeDocumentMoniker": "project\\States\\BranchStates\\MergeState.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchStates\\MergeState.cs",
+              "RelativeToolTip": "project\\States\\BranchStates\\MergeState.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAUwAsAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ReadyToMerge.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchItemsStates\\ReadyToMerge.cs",
+              "RelativeDocumentMoniker": "project\\States\\BranchItemsStates\\ReadyToMerge.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\VERSION-CONTROL-SYSTEM-\\project\\project\\States\\BranchItemsStates\\ReadyToMerge.cs",
+              "RelativeToolTip": "project\\States\\BranchItemsStates\\ReadyToMerge.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:39:16.775Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

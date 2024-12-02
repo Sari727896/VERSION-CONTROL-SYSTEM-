@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace project.Memento
 {
-    public class FolderMemento:BranchItemsMemento
+    public class FolderMemento : BranchItemsMemento
     {
-        public readonly List<BranchItems>  Content;
+        public readonly List<BranchItems> Content;
 
         public FolderMemento(DateTime timeStamp, List<BranchItems> Content) : base(timeStamp)
         {

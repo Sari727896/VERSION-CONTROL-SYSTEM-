@@ -9,7 +9,6 @@ namespace project.States.BranchItemsStates
 {
     public class UnderReview : BranchItemsState
     {
-        //to do after observer state
         public UnderReview(BranchItems branchItem) : base(branchItem)
         {
         }

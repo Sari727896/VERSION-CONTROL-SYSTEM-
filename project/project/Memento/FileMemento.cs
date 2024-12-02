@@ -10,9 +10,9 @@ namespace project.Memento
 {
     public class FileMemento : BranchItemsMemento
     {
-       public readonly string Content;
+        public readonly string Content;
 
-        public FileMemento(DateTime timeStamp,string Content) : base(timeStamp)
+        public FileMemento(DateTime timeStamp, string Content) : base(timeStamp)
         {
             this.Content = Content;
         }

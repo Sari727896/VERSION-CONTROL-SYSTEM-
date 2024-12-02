@@ -21,7 +21,6 @@ namespace project.States.BranchItemsStates
 
         public override void Merge()
         {
-            //return "Cannot merge in Draft state.\n";
             throw new Exception("Cannot merge in Draft state.\n");
         }
 

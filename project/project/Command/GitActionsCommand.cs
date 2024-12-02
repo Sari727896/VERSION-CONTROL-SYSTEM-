@@ -13,7 +13,7 @@ namespace project.Command
         protected BranchItems BranchItem { get; set; }
         public GitActionsCommand(BranchItems BranchItem)
         {
-            this.BranchItem=BranchItem;
+            this.BranchItem = BranchItem;
         }
         public abstract string Execute();
     }

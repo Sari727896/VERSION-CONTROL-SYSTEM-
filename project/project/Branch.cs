@@ -10,33 +10,33 @@ using System.Threading.Tasks;
 
 namespace project
 {
-    public class Branch:ICloneable
-    {//to do id
+    public class Branch : ICloneable
+    {
         List<BranchItems> branchItems;
         public string Name { get; set; }
         public Branch Parent { get; set; }
 
         List<UserAccess> userAccesses;
         private static int nextId = 1;
-        public int Id { get;  }
-        public BranchState State {private get; set; }
+        public int Id { get; }
+        public BranchState State { private get; set; }
         public ContentFactory FileFactory { get; set; }
         public List<Branch> Branches { get; set; }
 
-        public Branch(string Name,Branch Parent=null)
+        public Branch(string Name, Branch Parent = null)
         {
-            branchItems=new List<BranchItems>();
+            branchItems = new List<BranchItems>();
             this.Name = Name;
             this.Parent = Parent;
-            userAccesses=new List<UserAccess>();
-            State=new LockBranchState(this);
-            Id=nextId++;
+            userAccesses = new List<UserAccess>();
+            State = new LockBranchState(this);
+            Id = nextId++;
             FileFactory = ContentFactory.GetInstance();
             Branches = new List<Branch>();
         }
         public void ChangeState(BranchState newState)
         {
-            State= newState;
+            State = newState;
         }
         public string AddItem(BranchItems item)
         {
@@ -45,17 +45,17 @@ namespace project
         }
         public string RemoveItem(BranchItems item)
         {
-            var itemToRemove= branchItems.Find(i=>i.Name==item.Name);
+            var itemToRemove = branchItems.Find(i => i.Name == item.Name);
             branchItems.Remove(itemToRemove);
             return $"The file {item.Name}  has been removed successfully";
         }
-        public Branch CreateBranch(string existingBranchName,string newBranchName)
+        public Branch CreateBranch(string existingBranchName, string newBranchName)
         {
             Branch existingBranch;
             if (existingBranchName == Name)
                 existingBranch = this;
             else
-            existingBranch = Branches.Find(branch => branch.Name == existingBranchName);
+                existingBranch = Branches.Find(branch => branch.Name == existingBranchName);
             if (existingBranch != null)
             {
                 Branch newBranch = (Branch)existingBranch.Clone();
@@ -75,7 +75,7 @@ namespace project
         }
         public string UnlockBranch()
         {
-             return State.UnlockBranch();
+            return State.UnlockBranch();
         }
         public string HandleBranch()
         {
@@ -87,12 +87,12 @@ namespace project
         }
         public void grantAccess(String branchName, User user)
         {
-         
+
         }
         public void ChangeFile(string name, string content)
         {
-            var file= branchItems.Find(f=>f.Name==name);
-            FileContent content1=ContentFactory.GetContent(Id, name,content);
+            var file = branchItems.Find(f => f.Name == name);
+            FileContent content1 = ContentFactory.GetContent(Id, name, content);
             content1.Content = content;
             file.ChangeContent(content1);
             // אם זה תכולה של הבראנצ הנוכחי ואם לא מייצרת חדשאני לא יוצרת אובקיט חדש לתכולה רק מצביע חדש וכשאר רוצים לשנות אני בודקת 

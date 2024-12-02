@@ -12,7 +12,7 @@ namespace project.States.BranchItemsStates
         public Staged(BranchItems branchItem) : base(branchItem)
         {
         }
-        
+
         public override string Commit()
         {
             branchItem.ChangeItemState(new Commited(branchItem));
@@ -21,7 +21,6 @@ namespace project.States.BranchItemsStates
 
         public override void Merge()
         {
-            //return "Cannot merge in Staged state.\n";
             throw new Exception("Cannot merge in Staged state.\n");
         }
 

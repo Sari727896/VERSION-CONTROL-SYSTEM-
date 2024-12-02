@@ -21,7 +21,6 @@ namespace project.States.BranchItemsStates
         public override void Merge()
         {
             branchItem.ChangeItemState(new Merged(branchItem));
-            //return "Merge successful! Your changes have been integrated into the main branch. Great teamwork!\n";
         }
 
         public override string RequestAReview()

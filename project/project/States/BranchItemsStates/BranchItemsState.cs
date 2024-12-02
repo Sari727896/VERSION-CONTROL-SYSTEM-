@@ -12,7 +12,7 @@ namespace project.States.BranchItemsStates
         protected BranchItems branchItem;
         public BranchItemsState(BranchItems branchItem)
         {
-            this.branchItem=branchItem;
+            this.branchItem = branchItem;
         }
         public abstract void Merge();
         public abstract string Commit();

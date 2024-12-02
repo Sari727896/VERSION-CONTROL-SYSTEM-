@@ -46,8 +46,7 @@ namespace project.Composite
         }
         public string RequestAReview()
         {
-            //to do with observer
-           
+
             State.RequestAReview();
             NotifyReviewer("sari727896@gmail.com");
             return "The application is being processed";
@@ -82,10 +81,10 @@ namespace project.Composite
 
         }
         public void NotifyReviewer(string toAddress)
-        { 
+        {
             foreach (var observer in Reviewers)
             {
-                observer.Update(toAddress,this);
+                observer.Update(toAddress, this);
             }
         }
 

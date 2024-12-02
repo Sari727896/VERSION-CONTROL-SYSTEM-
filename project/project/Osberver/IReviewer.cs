@@ -9,7 +9,7 @@ namespace project.Osberver
 {
     public interface IReviewer
     {
-        public void Update(string toEmail,BranchItems item);
+        public void Update(string toEmail, BranchItems item);
         public void ConfirmRequest();
     }
 }

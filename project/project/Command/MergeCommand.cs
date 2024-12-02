@@ -17,7 +17,7 @@ namespace project.Command
 
         public override string Execute()
         {
-          return BranchItem.Merge(ItemToMerge);
+            return BranchItem.Merge(ItemToMerge);
         }
     }
 }

@@ -25,7 +25,6 @@ namespace project.States.BranchItemsStates
         public override void Merge()
         {
             branchItem.ChangeItemState(new Merged(branchItem));
-            ////return "Merge changes to merged state";
         }
 
 

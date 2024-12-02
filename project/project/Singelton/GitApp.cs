@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace project.Singelton
-{//לשנות לממש אם קיים userלפי הפונקציה שיצרנו שבודקת
+{
     public class GitApp
     {
         public List<Branch> Branches { get; set; }
@@ -16,8 +16,8 @@ namespace project.Singelton
         static GitApp gitApp;
         private GitApp(User CurrentUser)
         {
-            Branches=new List<Branch>();
-            Users=new List<User>();
+            Branches = new List<Branch>();
+            Users = new List<User>();
             AddUserIfNotExists(CurrentUser);
             this.CurrentUser = CurrentUser;
             MainBranch = new Branch("Main");
@@ -30,7 +30,7 @@ namespace project.Singelton
 
         public static GitApp GetInstance()
         {
-            User currentUser = new("Sari727896", "Sa326", "sari727896@gmail.com",Enums.UserAllowingAccess.write);
+            User currentUser = new("Sari727896", "Sa326", "sari727896@gmail.com", Enums.UserAllowingAccess.write);
             if (gitApp == null)
             {
                 lock (locker)
@@ -45,7 +45,7 @@ namespace project.Singelton
         }
         public void AddBranch(Branch branch)
         {
-            Branches.Add(branch);          
+            Branches.Add(branch);
         }
         public void DeleteBranch(Branch branch)
         {
@@ -77,9 +77,9 @@ namespace project.Singelton
                 Users.Add(user);
             }
         }
-        public static User GetUserById(int  id)
+        public static User GetUserById(int id)
         {
-            var user= Users.Find(u => u.GetId ==id);
+            var user = Users.Find(u => u.GetId == id);
             return user;
         }
     }
